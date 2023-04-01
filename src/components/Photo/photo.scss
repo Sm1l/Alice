@@ -1,0 +1,22 @@
+@import "../../abstracts/variables.scss";
+
+.photo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  justify-content: space-between;
+  flex: 1 70%;
+  background-color: $color-pink;
+  gap: 20px;
+  // padding: 10px;
+
+  &__text {
+  }
+
+  &__photo {
+    padding: 0px 0px 100% 50%;
+    position: absolute;
+    top: 100px;
+  }
+}

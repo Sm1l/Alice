@@ -1,0 +1,11 @@
+@import "../abstracts/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;700&display=swap");
+
+html,
+body {
+  color: $color-black;
+  font-size: 24px;
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+}

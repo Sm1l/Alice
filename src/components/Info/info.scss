@@ -1,0 +1,12 @@
+@import "../../abstracts/variables.scss";
+
+.info {
+  display: flex;
+  flex: 1;
+  background-color: $color-light-red;
+  padding: 0px 100px 100px;
+  &__some {
+    background: #eacaca;
+    width: 100%;
+  }
+}

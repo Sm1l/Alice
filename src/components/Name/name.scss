@@ -1,0 +1,33 @@
+@import "../../abstracts/variables.scss";
+
+.name {
+  display: flex;
+  // align-items: center;
+  justify-content: flex-end;
+  flex: 1 30%;
+  background-color: $color-black-op04;
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-transform: uppercase;
+    // padding: 50px 30px;
+    font-weight: 700;
+  }
+  &__name {
+    font-size: 58px;
+    font-weight: 600;
+  }
+
+  &__surname {
+    font-size: 102px;
+    font-weight: 600;
+  }
+
+  &__profession {
+    font-size: 32px;
+  }
+}
