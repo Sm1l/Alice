@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Alice/static/css/main.90254d06.css",
+    "main.js": "/Alice/static/js/main.e03c48fb.js",
+    "static/media/kvoka.jpg": "/Alice/static/media/kvoka.e2f2431fb9cdeb48221b.jpg",
+    "index.html": "/Alice/index.html",
+    "main.90254d06.css.map": "/Alice/static/css/main.90254d06.css.map",
+    "main.e03c48fb.js.map": "/Alice/static/js/main.e03c48fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90254d06.css",
+    "static/js/main.e03c48fb.js"
+  ]
+}
