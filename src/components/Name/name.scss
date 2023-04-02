@@ -1,33 +1,40 @@
 @import "../../abstracts/variables.scss";
 
 .name {
+  grid-area: name;
   display: flex;
-  // align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
-  flex: 1 30%;
+  // flex: 1 30%;
   background-color: $color-black-op04;
   writing-mode: vertical-rl;
   transform: scale(-1);
 
   &__title {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
     text-transform: uppercase;
     // padding: 50px 30px;
-    font-weight: 700;
+    font-weight: 400;
   }
   &__name {
-    font-size: 58px;
-    font-weight: 600;
+    display: block;
+    font-size: 82px;
+    padding-right: 10px;
+    // font-weight: 600;
   }
 
   &__surname {
-    font-size: 102px;
-    font-weight: 600;
+    display: block;
+    font-size: 152px;
+    // font-weight: 600;
   }
 
   &__profession {
-    font-size: 32px;
+    display: block;
+    font-size: 48px;
   }
 }

@@ -1,5 +1,14 @@
 .main {
   display: flex;
   flex-direction: column;
+  gap: 100px;
   // padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: minmax(auto, 30%) auto;
+  grid-template-areas:
+    "name photo"
+    "contacts experience";
+  // padding: 200px 150px 150px 150px;
+  padding: 150px;
 }

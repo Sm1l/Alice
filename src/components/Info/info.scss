@@ -1,12 +1,12 @@
 @import "../../abstracts/variables.scss";
 
 .info {
-  display: flex;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "info experience";
   flex: 1;
   background-color: $color-light-red;
   padding: 0px 100px 100px;
-  &__some {
-    background: #eacaca;
-    width: 100%;
-  }
 }

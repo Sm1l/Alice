@@ -1,13 +1,19 @@
 import React from "react";
-import About from "../About";
-import Info from "../Info";
+
+import Contacts from "../Contacts";
+import Experience from "../Experience";
+import Name from "../Name";
+import Photo from "../Photo";
+
 import "./main.scss";
 
 const Main = () => {
   return (
     <main className="main">
-      <About />
-      <Info />
+      <Name />
+      <Photo />
+      <Contacts />
+      <Experience />
     </main>
   );
 };

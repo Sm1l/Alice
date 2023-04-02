@@ -1,2 +1,18 @@
 .contacts {
+  grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #dcd78f;
+  &__about,
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }

@@ -1,43 +1,48 @@
 @import "../../abstracts/variables.scss";
 
 .about {
-  display: flex;
-  flex: 1;
+  // display: flex;
+  // flex: 1;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name photo";
   background-color: $color-green;
   padding: 150px 100px 0;
-  &__namecontainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1 30%;
-    background-color: $color-black-op04;
-    writing-mode: vertical-rl;
-    transform: scale(-1);
-  }
-  &__title {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-transform: uppercase;
-    padding: 50px 30px;
-    font-weight: 700;
-  }
-  &__name {
-    font-size: 48px;
-    font-weight: 600;
-  }
+  // &__namecontainer {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   flex: 1 30%;
+  //   background-color: $color-black-op04;
+  //   writing-mode: vertical-rl;
+  //   transform: scale(-1);
+  // }
+  // &__title {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 20px;
+  //   text-transform: uppercase;
+  //   padding: 50px 30px;
+  //   font-weight: 700;
+  // }
+  // &__name {
+  //   font-size: 48px;
+  //   font-weight: 600;
+  // }
 
-  &__surname {
-    font-size: 102px;
-    font-weight: 600;
-  }
+  // &__surname {
+  //   font-size: 102px;
+  //   font-weight: 600;
+  // }
 
-  &__profession {
-    font-size: 32px;
-  }
+  // &__profession {
+  //   font-size: 32px;
+  // }
 
-  &__photocontainer {
-    flex: 1 70%;
-    background-color: $color-pink;
-  }
+  // &__photocontainer {
+  //   flex: 1 70%;
+  //   background-color: $color-pink;
+  // }
 }
