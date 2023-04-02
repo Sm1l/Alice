@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Alice/static/css/main.6b88cff9.css",
+    "main.css": "/Alice/static/css/main.0f949c50.css",
     "main.js": "/Alice/static/js/main.bcad8180.js",
     "static/media/kvoka.jpg": "/Alice/static/media/kvoka.e2f2431fb9cdeb48221b.jpg",
     "index.html": "/Alice/index.html",
-    "main.6b88cff9.css.map": "/Alice/static/css/main.6b88cff9.css.map",
+    "main.0f949c50.css.map": "/Alice/static/css/main.0f949c50.css.map",
     "main.bcad8180.js.map": "/Alice/static/js/main.bcad8180.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b88cff9.css",
+    "static/css/main.0f949c50.css",
     "static/js/main.bcad8180.js"
   ]
 }
