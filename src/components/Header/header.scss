@@ -5,8 +5,17 @@
   // left: 0;
   // min-width: 100%;
   padding: 10px 150px;
-  background-color: blueviolet;
-  &__link {
-    cursor: pointer;
+  background-color: rgb(167, 160, 174);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &__checkbox {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__label {
   }
 }

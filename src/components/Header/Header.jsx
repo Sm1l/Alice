@@ -1,12 +1,14 @@
 import React from "react";
+import Checkbox from "../Checkbox";
+
 import "./header.scss";
 
 const Header = () => {
   return (
     <header className="header">
-      {/* <a href="#" className="header__link"> */}
-      Header
-      {/* </a> */}
+      <span className="header__speech">Ораторское мастерство</span>
+      <Checkbox />
+      <span className="header__speech">Актриса</span>
     </header>
   );
 };

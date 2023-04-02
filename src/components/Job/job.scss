@@ -1,6 +1,7 @@
 .job {
-  grid-area: job;
+  // grid-area: job;
   flex: 1;
   display: flex;
+  flex-direction: column;
   background-color: rgb(222, 189, 131);
 }
