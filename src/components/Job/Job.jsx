@@ -4,12 +4,21 @@ import "./job.scss";
 const Job = () => {
   return (
     <div className="job">
-      <h2 className="job__title title"> Опыт</h2>
+      <h2 className="job__title title"> О себе</h2>
       <p className="job__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe sunt autem eligendi sint. Dolorem maxime
-        voluptate molestias suscipit quaerat, nam officia id laborum animi, asperiores placeat aliquid recusandae
-        dignissimos!
+        14+ лет стаж преподавания по актёрскому мастерству, сценическому движению, ритмике и пластике как у детей от 6
+        лет, так и у взрослых.
       </p>
+      <p className="job__text">
+        Преподаватель Актерского Мастерства в одной из ведущих школ ораторского искусства "Король Говорит".
+      </p>
+      <p className="job__text">Магистр в области психолого-педагогического образования, автор научной работы.</p>
+      <p className="job__text">
+        Главный ...руководитель проекта "....." Федеральное государственное бюджетное образовательное учреждение высшего
+        образования "Московский Государственный психолого-педагогический университет"!!!!
+      </p>
+      <p className="job__text">Актриса театра (театр НАТ) и кино.</p>
+      <p className="job__text">Теле и радиоведущая.</p>
     </div>
   );
 };

@@ -6,9 +6,19 @@ const Education = () => {
     <div className="education">
       <h2 className="education__title title"> Образование</h2>
       <p className="education__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe sunt autem eligendi sint. Dolorem maxime
-        voluptate molestias suscipit quaerat, nam officia id laborum animi, asperiores placeat aliquid recusandae
-        dignissimos!
+        В 2013 г. – окончила <span>с отличием</span> факультет Музыкального искусства Эстрады СПБГУКИ курс доцента
+        кафедры мастерства актёра Николаева Александра Николаевича и заслуженного артиста России Шагина Владимира
+        Павловича (г. Санкт-Петербург).
+      </p>
+      <p className="education__text">
+        В 2020 г. - окончила курсы повышения квалификации для специалистов, имеющих высшее образование, по специализации
+        «Практика Сценической речи» Федеральное государственное бюджетное образовательное учреждение высшего образования
+        «Российский институт театрального искусства – ГИТИС» (г. Москва).
+      </p>
+      <p className="education__text">
+        В 2022 г. – окончила <span>с отличием</span> факультет Психолого-педагогического образования Федеральное
+        государственное бюджетное образовательное учреждение высшего образования "Московский Государственный
+        психолого-педагогический университет" (г. Москва).
       </p>
     </div>
   );

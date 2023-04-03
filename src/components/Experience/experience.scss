@@ -1,6 +1,7 @@
 .experience {
   grid-area: experience;
   display: flex;
+  flex-direction: column;
   gap: 30px;
   // background-color: rgb(131, 131, 222);
   padding-top: 100px;

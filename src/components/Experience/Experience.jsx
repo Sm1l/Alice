@@ -7,8 +7,8 @@ import "./experience.scss";
 const Experience = () => {
   return (
     <div className="experience">
-      <Education />
       <Job />
+      <Education />
     </div>
   );
 };

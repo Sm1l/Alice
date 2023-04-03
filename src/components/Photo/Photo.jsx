@@ -6,13 +6,21 @@ const Photo = () => {
   return (
     <div className="photo">
       <p className="photo__text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi vitae saepe adipisci! Nobis, deleniti aut?
-        Officiis, consequatur quae alias qui natus quidem asperiores numquam minima autem recusandae ea voluptatem quia?
+        Привет! <br />
+        Меня зовут Соловьёва Алиса и я являюсь преподавателем по технике речи, ораторскому мастерству и пластике.
       </p>
       <p className="photo__text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi vitae saepe adipisci! Nobis, deleniti aut?
-        Officiis, consequatur quae alias qui natus quidem asperiores numquam minima autem recusandae ea voluptatem quia?
+        Ты неуверен в себе? У тебя не получается четко выражать свои мысли? Ты боишься выступать на публике? Тебе сложно
+        знакомиться с новыми людьми?
       </p>
+      <p className="photo__text">
+        Мы вместе справимся со всеми этими проблемами! Возможно, тебя нужно только слегка подтолкнуть в правильном
+        направлении! А может, твои страхи и зажимы связаны с какими-то жизненными ситуациями, произошедшими в далеком
+        прошлом! В любом случае, мой богатый опыт преподавания, как у детишек с 6 лет, так и у взрослых состоявшихся
+        людей, а также мои психологические знания, помогут нам вместе решить все беспокоящие вопросы!
+      </p>
+      <p className="photo__text">До скорой встречи!</p>
+
       <div className="photo__photo _ibg">
         <img src={photo} alt="Фотография Соловьевой Алисы" />
       </div>

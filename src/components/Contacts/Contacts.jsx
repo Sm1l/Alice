@@ -39,7 +39,7 @@ const Contacts = () => {
           </li>
           <li className="contacts__item">
             <a href="https://wa.me/+79818005886" class="contacts__watsapp" target="_blank" rel="noreferrer noopener">
-              watsapp
+              whatsApp
             </a>
           </li>
           <li className="contacts__item">
