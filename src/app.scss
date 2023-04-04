@@ -5,4 +5,8 @@
 @import "./base/title.scss";
 
 .app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
 }

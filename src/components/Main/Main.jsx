@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, useTransform } from "framer-motion";
 
 import Contacts from "../Contacts";
 import Experience from "../Experience";
@@ -7,14 +8,16 @@ import Photo from "../Photo";
 
 import "./main.scss";
 
-const Main = () => {
+const Main = ({ offsetY, scrollY }) => {
+  const marginTop = useTransform(scrollY, offsetY, offsetY);
+
   return (
-    <main className="main">
+    <motion.main className="main" style={{ marginTop: marginTop }}>
       <Name />
       <Photo />
       <Contacts />
       <Experience />
-    </main>
+    </motion.main>
   );
 };
 

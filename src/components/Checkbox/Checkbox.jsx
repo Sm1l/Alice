@@ -5,15 +5,15 @@ const Checkbox = () => {
   return (
     <div className="checkbox">
       <div id="container">
-        <div class="toggle">
-          <input type="checkbox" name="toggle" class="check-checkbox" id="mytoggle" />
-          <label class="check-label" for="mytoggle">
+        <div className="toggle">
+          <input type="checkbox" name="toggle" className="check-checkbox" id="mytoggle" />
+          <label className="checklabel" htmlFor="mytoggle">
             <div id="background"></div>
-            <span class="face">
-              <span class="face-container">
-                <span class="eye left"></span>
-                <span class="eye right"></span>
-                <span class="mouth"></span>
+            <span className="face">
+              <span className="facecontainer">
+                <span className="eye left"></span>
+                <span className="eye right"></span>
+                <span className="mouth"></span>
               </span>
             </span>
           </label>
