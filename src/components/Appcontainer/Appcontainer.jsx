@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useTransform, useScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import Header from "../Header";
 import Main from "../Main";
 import Footer from "../Footer";

@@ -1,8 +1,8 @@
 import React from "react";
 import "./photo.scss";
-import photo from "./kvoka.jpg";
+import photo from "./img/kvoka.jpg";
 
-const Photo = () => {
+function Photo() {
   return (
     <div className="photo">
       <p className="photo__text">
@@ -22,10 +22,13 @@ const Photo = () => {
       <p className="photo__text">До скорой встречи!</p>
 
       <div className="photo__photo _ibg">
+        {/* <img src={photo} alt="Фотография Соловьевой Алисы" /> */}
+        {/* <AlicePhoto /> */}
         <img src={photo} alt="Фотография Соловьевой Алисы" />
+        {/* <Kvoka /> */}
       </div>
     </div>
   );
-};
+}
 
 export default Photo;

@@ -1,5 +1,7 @@
 import React from "react";
 import { motion, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import Checkbox from "../Checkbox";
 
 import "./header.scss";
@@ -64,10 +66,20 @@ const Header = ({ offsetY, scrollY }) => {
           sit similique voluptatum velit quod, eius voluptatem, earum deserunt blanditiis impedit voluptates culpa omnis
           porro?
         </p>
-        <div className="header__toggle">
-          <span className="header__check">Ораторское мастерство</span>
-          <Checkbox />
-          <span className="header__check">Актриса</span>
+        <div className="header__bottom-line">
+          <div className="header__toggle">
+            <span className="header__check">Ораторское мастерство</span>
+            <Checkbox />
+            <span className="header__check">Актриса</span>
+          </div>
+          <div className="header__link-container">
+            <Link className="header__link" to="/">
+              Преподаватель
+            </Link>
+            <Link className="header__link" to="/actress">
+              Актриса
+            </Link>
+          </div>
         </div>
       </motion.div>
     </motion.header>
