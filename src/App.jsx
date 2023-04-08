@@ -17,8 +17,8 @@ const App = () => {
     <div className="app">
       <Routes>
         <Route path="/" element={<Layout offsetY={offsetY} scrollY={scrollY} />}>
-          <Route path="/" element={<SpeechPage />} />
-          <Route path="/actress" element={<ActressPage />} />
+          <Route path="/" element={<SpeechPage offsetY={offsetY} scrollY={scrollY} />} />
+          <Route path="/actress" element={<ActressPage offsetY={offsetY} scrollY={scrollY} />} />
         </Route>
       </Routes>
     </div>

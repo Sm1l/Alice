@@ -1,9 +1,9 @@
-.main {
-  // display: flex;
-  // flex-direction: column;
+.mainactress {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   // padding: 10px;
   display: grid;
-  gap: 100px;
   grid-template-rows: auto auto;
   grid-template-columns: minmax(auto, 30%) auto;
   grid-template-areas:

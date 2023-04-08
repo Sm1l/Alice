@@ -7,7 +7,7 @@ const Layout = ({ offsetY, scrollY }) => {
   return (
     <>
       <Header offsetY={offsetY} scrollY={scrollY} />
-      <Outlet offsetY={offsetY} scrollY={scrollY} />
+      <Outlet />
       <Footer />
     </>
   );
