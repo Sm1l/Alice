@@ -3,7 +3,7 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer ui-block">
       <p className="footer__copy">Copyright 2023 © Копирование информации запрещено законом</p>
     </footer>
   );

@@ -4,7 +4,7 @@ const headerSlice = createSlice({
   name: "header",
   initialState: {
     pageCheckbox: false,
-    theme: "light",
+    theme: "",
   },
   reducers: {
     togglePageCheckbox(state) {

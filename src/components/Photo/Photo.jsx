@@ -4,7 +4,7 @@ import photo from "./img/kvoka.jpg";
 
 function Photo() {
   return (
-    <div className="photo">
+    <div className="photo ui-block">
       <p className="photo__text">
         Привет! <br />
         Меня зовут Соловьёва Алиса и я являюсь преподавателем по технике речи, ораторскому мастерству и пластике.

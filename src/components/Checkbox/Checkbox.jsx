@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { togglePageCheckbox } from "../../store/headerSlice";
+import { BsSun, BsSunFill, BsMoonStars, BsMoonStarsFill } from "react-icons/bs";
 
 import "./checkbox.scss";
 
-const Checkbox = () => {
+const Checkbox = ({ handleClick }) => {
   const dispatch = useDispatch();
   const pageCheckbox = useSelector((store) => store.header.pageCheckbox);
-  // console.log(pageCheckbox);
-  // const [checked, setChecked] = useState(false);
-  // console.log(checked);
 
-  const checkboxHandleChange = () => {
-    dispatch(togglePageCheckbox());
-    // setChecked(!checked);
-  };
+  // const checkboxHandleChange = () => {
+  //   dispatch(togglePageCheckbox());
+  // };
 
   return (
     <div className="checkbox">
+      <BsSun className="svg" />
       <div id="container">
         <div className="toggle">
           <input
@@ -25,8 +23,8 @@ const Checkbox = () => {
             name="toggle"
             className="check-checkbox"
             id="mytoggle"
-            onChange={checkboxHandleChange}
-            checked={pageCheckbox}
+            onClick={handleClick}
+            // checked={pageCheckbox}
           />
           <label className="checklabel" htmlFor="mytoggle">
             <div id="background"></div>
@@ -40,6 +38,7 @@ const Checkbox = () => {
           </label>
         </div>
       </div>
+      <BsMoonStars className="svg" />
     </div>
   );
 };
