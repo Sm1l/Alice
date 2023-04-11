@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./contacts.scss";
 
 const Contacts = () => {
@@ -8,59 +10,58 @@ const Contacts = () => {
         <h2 className="contacts__title title">Контакты</h2>
         <p className="contacts__name">Соловьева Алиса</p>
         <p className="contacts__name">Город: Москва</p>
-        <a href="tel:+79818005886" className="contacts__phone">
+        <Link to="tel:+79818005886" className="contacts__phone">
           8(981) 800-58-86
-        </a>
-        <a href="mailto: Lisicas22@gmail.com">Lisicas22@gmail.com</a>
-        {/* <a href="https://wa.me/+79818005886" class="contacts__watsapp" target="_blank"></a> */}
+        </Link>
+        <Link to="mailto: Lisicas22@gmail.com">Lisicas22@gmail.com</Link>
       </div>
       <div className="contacts__social">
         <h2 className="contacts__title title">Социальные сети</h2>
         <ul className="contacts__list">
           <li className="contacts__item">
-            <a
-              href="https://instagram.com/lisa__a__s?igshid=YmMyMTA2M2Y="
+            <Link
+              to="https://instagram.com/lisa__a__s?igshid=YmMyMTA2M2Y="
               className="contacts__instagram"
               target="_blank"
               rel="noreferrer noopener"
             >
               instagram
-            </a>
+            </Link>
           </li>
           <li className="contacts__item">
-            <a href="https://vk.com/alisaas" className="contacts__vk" target="_blank" rel="noreferrer noopener">
+            <Link to="https://vk.com/alisaas" className="contacts__vk" target="_blank" rel="noreferrer noopener">
               vk
-            </a>
+            </Link>
           </li>
           <li className="contacts__item">
-            <a
-              href="https://t.me/+79818005886"
+            <Link
+              to="https://t.me/+79818005886"
               className="contacts__telegram"
               target="_blank"
               rel="noreferrer noopener"
             >
               telegram
-            </a>
+            </Link>
           </li>
           <li className="contacts__item">
-            <a
-              href="https://wa.me/+79818005886"
+            <Link
+              to="https://wa.me/+79818005886"
               className="contacts__watsapp"
               target="_blank"
               rel="noreferrer noopener"
             >
               whatsApp
-            </a>
+            </Link>
           </li>
           <li className="contacts__item">
-            <a
-              href="https://kinopoisk.ru/name/6439642"
+            <Link
+              to="https://kinopoisk.ru/name/6439642"
               className="contacts__kinopoisk"
               target="_blank"
               rel="noreferrer noopener"
             >
               kinopoisk
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

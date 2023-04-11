@@ -3,7 +3,7 @@ import "./job.scss";
 
 const Job = () => {
   return (
-    <div className="job">
+    <div className="job ui-block">
       <h2 className="job__title title"> О себе</h2>
       <p className="job__text">
         14+ лет стаж преподавания по актёрскому мастерству, сценическому движению, ритмике и пластике как у детей от 6

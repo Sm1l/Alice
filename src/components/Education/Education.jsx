@@ -3,7 +3,7 @@ import "./education.scss";
 
 const Education = () => {
   return (
-    <div className="education">
+    <div className="education ui-block">
       <h2 className="education__title title"> Образование</h2>
       <p className="education__text">
         В 2013 г. – окончила <span>с отличием</span> факультет Музыкального искусства Эстрады СПБГУКИ курс доцента
