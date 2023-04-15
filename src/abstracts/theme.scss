@@ -3,16 +3,16 @@ body[data-theme="dark"] {
   --colors-bg: #202c37;
   --colors-ui-base: #2b3945;
   --colors-link: #de8927;
-  --colors-link-hover: #e57d07;
+  // --colors-link-hover: #e57d07;
 
   --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
 }
 
 body[data-theme="light"] {
   --colors-text: #111517;
-  --colors-bg: #fafafa;
-  --colors-ui-base: #b3b3b3;
-  --colors-link: #7f4209;
+  --colors-bg: #e0dfdd;
+  --colors-ui-base: #d4d2cc;
+  --colors-link: #4c4c4c;
   --colors-link-hover: #de8b2b;
 
   --shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;

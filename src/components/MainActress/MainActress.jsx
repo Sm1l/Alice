@@ -1,8 +1,8 @@
 import React from "react";
 import { motion, useTransform } from "framer-motion";
 
-import Contacts from "../components/Contacts";
-import Name from "../components/Name";
+import Name from "../Name";
+import ContactsSocial from "../ContactsSocial/ContactsSocial";
 // import Contacts from "../Contacts";
 // import Experience from "../Experience";
 // import Name from "../Name";
@@ -19,7 +19,7 @@ const MainActress = ({ offsetY, scrollY }) => {
       {/* <Photo /> */}
       {/* <Contacts /> */}
       {/* <Experience /> */}
-      <Contacts />
+      <ContactsSocial />
     </motion.main>
   );
 };

@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes, Link } from "react-router-dom";
+
+import MainPage from "./pages/MainPage/MainPage";
 import SpeechPage from "./pages/SpeechPage";
 import ActressPage from "./pages/ActressPage/";
 import Layout from "./components/Layout";
@@ -17,7 +19,8 @@ const App = () => {
     <div className="app">
       <Routes>
         <Route path="/" element={<Layout offsetY={offsetY} scrollY={scrollY} />}>
-          <Route path="/" element={<SpeechPage offsetY={offsetY} scrollY={scrollY} />} />
+          <Route path="/" element={<MainPage offsetY={offsetY} scrollY={scrollY} />} />
+          <Route path="/speech" element={<SpeechPage offsetY={offsetY} scrollY={scrollY} />} />
           <Route path="/actress" element={<ActressPage offsetY={offsetY} scrollY={scrollY} />} />
         </Route>
       </Routes>
