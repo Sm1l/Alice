@@ -24,6 +24,8 @@ const MainPage = ({ offsetY, scrollY }) => {
     dispatch(toggleTheme());
   };
 
+  const MotionLogo = motion(Logo);
+
   //*animation
   const heightSizes = [400, 70];
   const imageSizes = [150, 50];
@@ -34,6 +36,11 @@ const MainPage = ({ offsetY, scrollY }) => {
   const fontSize = useTransform(scrollY, offsetY, fontSizes);
   const opacity = useTransform(scrollY, [20, 300], [1, 0]);
 
+  const mainVariants = {
+    visible: (i) => ({ opacity: 1, transition: { delay: i * 1 } }),
+    hidden: { opacity: 0 },
+  };
+
   //*theme
 
   // const [theme, setTheme] = useState("light");
@@ -43,15 +50,30 @@ const MainPage = ({ offsetY, scrollY }) => {
   }, [theme]);
 
   return (
-    <>
-      <motion.header className="mainpage__header ">
-        <div className="mainpage__toggle ">
+    <div className="mainpage">
+      <header className="mainpage__header ">
+        <motion.div
+          className="mainpage__toggle "
+          initial={{ x: -1000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 2 }}
+        >
           <Classic duration={750} onToggle={changeTheme} />
-        </div>
-      </motion.header>
-      <motion.main className="mainpage__main" style={{ height: headerHeight }}>
+        </motion.div>
+      </header>
+      <motion.main
+        className="mainpage__main"
+        // style={{ height: headerHeight }}
+        // variants={mainVariants}
+        // initial="hidden"
+        // animate="visible"
+        // custom={2}
+      >
         <motion.div className="mainpage__logocontainer">
-          <Logo className="mainpage__logo" />
+          {/* // initial={{ backgroundColor: "transparent" }}
+        // animate={{ backgroundColor: "yellow" }}
+        // transition={{ duration: 4, repeat: Infinity, delay: 1, repeatType: "reverse" }}> */}
+          <MotionLogo className="mainpage__logo" />
         </motion.div>
         <motion.h1 className="mainpage__title title">Соловьёва Алиса</motion.h1>
         <motion.nav className="mainpage__linkcontainer">
@@ -68,13 +90,18 @@ const MainPage = ({ offsetY, scrollY }) => {
             <motion.p style={{ fontSize }}>Актриса</motion.p>
           </NavLink>
         </motion.nav>
-        <motion.p className="mainpage__text">
+        {/* <motion.p className="mainpage__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita odit esse quod rem perspiciatis. Officia
           debitis libero officiis veritatis veniam, nemo ea in culpa voluptatem id, quod autem dolor.
-        </motion.p>
+        </motion.p> */}
       </motion.main>
-      <motion.footer className="mainpage__footer">
-        <div className="mainpage__contacts">
+      <footer className="mainpage__footer">
+        <motion.div
+          className="mainpage__contacts"
+          initial={{ x: 1000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 2 }}
+        >
           <ul className="mainpage__contacts-list">
             <li className="mainpage__contacts-link">
               <SocialTelephone />
@@ -95,9 +122,9 @@ const MainPage = ({ offsetY, scrollY }) => {
               <SocialKinopoisk />
             </li>
           </ul>
-        </div>
-      </motion.footer>
-    </>
+        </motion.div>
+      </footer>
+    </div>
   );
 };
 
