@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Alice/static/css/main.439f2e6b.css",
-    "main.js": "/Alice/static/js/main.376b1463.js",
+    "main.css": "/Alice/static/css/main.da4ba105.css",
+    "main.js": "/Alice/static/js/main.ec1316f8.js",
     "static/media/kvoka.jpg": "/Alice/static/media/kvoka.e2f2431fb9cdeb48221b.jpg",
     "static/media/HelveticaNeueCyr-Light.woff2": "/Alice/static/media/HelveticaNeueCyr-Light.ca1c9d28a98e39bc4088.woff2",
     "static/media/HelveticaNeueCyr-Medium.woff2": "/Alice/static/media/HelveticaNeueCyr-Medium.751c19bd96c1fdbe6c88.woff2",
     "static/media/Liaslogo.svg": "/Alice/static/media/Liaslogo.42aea877d1eaea62ccdeb7d5010eb68a.svg",
     "index.html": "/Alice/index.html",
-    "main.439f2e6b.css.map": "/Alice/static/css/main.439f2e6b.css.map",
-    "main.376b1463.js.map": "/Alice/static/js/main.376b1463.js.map"
+    "main.da4ba105.css.map": "/Alice/static/css/main.da4ba105.css.map",
+    "main.ec1316f8.js.map": "/Alice/static/js/main.ec1316f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.439f2e6b.css",
-    "static/js/main.376b1463.js"
+    "static/css/main.da4ba105.css",
+    "static/js/main.ec1316f8.js"
   ]
 }
