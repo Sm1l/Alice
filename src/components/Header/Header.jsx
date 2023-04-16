@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion, useTransform } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
-import { toggleTheme } from "../../store/headerSlice";
+import { toggleTheme } from "../../store/themeSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-import logo from "./img/Liaslogo.svg";
 import { ReactComponent as Logo } from "./img/Liaslogo.svg";
 
 import "@theme-toggles/react/css/Classic.css";
@@ -30,13 +29,11 @@ const Header = ({ offsetY, scrollY }) => {
   const opacity = useTransform(scrollY, [20, 300], [1, 0]);
 
   //*theme
-  // const dispatch = useDispatch();
-  // const theme = useSelector((store) => store.header.theme);
-  // console.log(theme);
-  // const handleToggleTheme = dispatch(toggleTheme());
-  const [theme, setTheme] = useState("light");
-  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
-
+  const dispatch = useDispatch();
+  const theme = useSelector((store) => store.theme.theme);
+  const changeTheme = () => {
+    dispatch(toggleTheme());
+  };
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
   }, [theme]);
@@ -92,7 +89,7 @@ const Header = ({ offsetY, scrollY }) => {
             </ul>
           </div>
           <div className="header__toggle">
-            <Classic duration={750} onToggle={toggleTheme} />
+            <Classic duration={750} onToggle={changeTheme} />
           </div>
         </div>
       </motion.div>

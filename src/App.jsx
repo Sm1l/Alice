@@ -18,8 +18,8 @@ const App = () => {
   return (
     <div className="app">
       <Routes>
+        <Route path="/" element={<MainPage offsetY={offsetY} scrollY={scrollY} />} />
         <Route path="/" element={<Layout offsetY={offsetY} scrollY={scrollY} />}>
-          <Route path="/" element={<MainPage offsetY={offsetY} scrollY={scrollY} />} />
           <Route path="/speech" element={<SpeechPage offsetY={offsetY} scrollY={scrollY} />} />
           <Route path="/actress" element={<ActressPage offsetY={offsetY} scrollY={scrollY} />} />
         </Route>

@@ -1,2 +1,87 @@
 .mainpage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 100px;
+    //  background-color: var(--colors-bg);
+    background-color: transparent;
+  }
+  &__main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 30px;
+    background-color: var(--colors-bg);
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 100px;
+    //  background-color: var(--colors-bg);
+    background-color: transparent;
+  }
+
+  //   &__logocontainer {
+  //     width: 300px;
+  //     height: 300px;
+  //     margin-bottom: 20px;
+  //   }
+  &__logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  &__title {
+    font-size: 50px;
+  }
+
+  &__linkcontainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  &__link {
+    // font-size: 30px;
+  }
+
+  &__p {
+    font-size: 40px;
+  }
+
+  &__text {
+  }
+
+  &__contacts-list {
+    display: flex;
+
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
