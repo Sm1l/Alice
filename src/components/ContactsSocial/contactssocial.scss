@@ -1,0 +1,12 @@
+.contactssocial {
+  // grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__list {
+    display: flex;
+    // flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -3,7 +3,14 @@ import { motion, useTransform } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
 import { toggleTheme } from "../../store/headerSlice";
 import { useDispatch, useSelector } from "react-redux";
-// import { BsSun, BsSunFill, BsMoonStars, BsMoonStarsFill } from "react-icons/bs";
+
+import logo from "./img/Liaslogo.svg";
+import { ReactComponent as Logo } from "./img/Liaslogo.svg";
+
+import SocialWhatsApp from "../Social/SocialWhatsApp";
+import SocialTelephone from "../Social/SocialTelephone";
+import SocialInstagram from "../Social/SocialInstagram";
+import SocialEmail from "../Social/SocialEmail";
 
 import Checkbox from "../Checkbox";
 
@@ -14,12 +21,10 @@ const Header = ({ offsetY, scrollY }) => {
   const heightSizes = [400, 70];
   const imageSizes = [150, 50];
   const fontSizes = ["40px", "20px"];
-  const contactsFontSizes = ["30px", "18px"];
 
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   const logoWidth = useTransform(scrollY, offsetY, imageSizes);
   const fontSize = useTransform(scrollY, offsetY, fontSizes);
-  const contactsFontSize = useTransform(scrollY, offsetY, contactsFontSizes);
   const opacity = useTransform(scrollY, [20, 300], [1, 0]);
 
   //*theme
@@ -37,62 +42,61 @@ const Header = ({ offsetY, scrollY }) => {
   return (
     <motion.header className="header ui-block" style={{ height: headerHeight }}>
       <div className="header__top">
-        <motion.img
-          src=""
-          alt="Соловьёва Алиса логотип"
-          className="header__logo"
-          style={{ width: logoWidth, height: logoWidth }}
-        />
-        <motion.div className="header__contacts" style={{ fontSize: contactsFontSize }}>
-          <ul className="header__list">
-            <li className="header__item">
-              <Link to="tel:+79818005886" className="contacts__phone">
-                8(981) 800-58-86
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link
-                to="https://wa.me/+79818005886"
-                className="contacts__watsapp"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                whatsApp
-              </Link>
-            </li>
-          </ul>
-        </motion.div>
-        <motion.h2 className="header__name" style={{ fontSize }}>
-          Соловьёва Алиса
-        </motion.h2>
+        <div className="header__logocontainer">
+          <NavLink to="/">
+            {/* <motion.img
+              src={logo}
+              alt="Соловьёва Алиса логотип"
+              className="header__logo"
+              style={{ width: logoWidth, height: logoWidth }}
+            /> */}
+            <motion.div style={{ width: logoWidth, height: logoWidth }}>
+              <Logo className="header__logo" width={logoWidth} height={logoWidth} />
+            </motion.div>
+          </NavLink>
+          <motion.h2 className="header__name" style={{ fontSize }}>
+            Соловьёва Алиса
+          </motion.h2>
+        </div>
+        <nav className="header__link-container">
+          <NavLink
+            className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+            to="/speech"
+          >
+            <motion.p style={{ fontSize }}>Преподаватель</motion.p>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+            to="/actress"
+          >
+            <motion.p style={{ fontSize }}>Актриса</motion.p>
+          </NavLink>
+        </nav>
       </div>
       <motion.div className="header__bottom" style={{ opacity }}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam sapiente, suscipit odio totam debitis
-          sit similique voluptatum velit quod, eius voluptatem, earum deserunt blanditiis impedit voluptates culpa omnis
-          porro?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita odit esse quod rem perspiciatis. Officia
+          debitis libero officiis veritatis veniam, nemo ea in culpa voluptatem id, quod autem dolor.
         </p>
-        <div className="header__bottom-line">
-          <div className="header__toggle">
-            {/* <span className="header__check">{BsSun}</span> */}
-            {/* <BsSun /> */}
-            <Checkbox handleClick={toggleTheme} />
-            {/* <span className="header__check">{BsMoonStars}</span> */}
-            {/* <BsMoonStars /> */}
+        <div className="header__bottom-container">
+          <div className="header__contacts contacts">
+            <ul className="header__contacts-list">
+              <li className="header__contacts-link">
+                <SocialTelephone />
+              </li>
+              <li className="header__contacts-link">
+                <SocialWhatsApp />
+              </li>
+              <li className="header__contacts-link">
+                <SocialInstagram />
+              </li>
+              <li className="header__contacts-link">
+                <SocialEmail />
+              </li>
+            </ul>
           </div>
-          <div className="header__link-container">
-            <NavLink
-              className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-              to="/"
-            >
-              Преподаватель
-            </NavLink>
-            <NavLink
-              className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-              to="/actress"
-            >
-              Актриса
-            </NavLink>
+          <div className="header__toggle">
+            <Checkbox handleClick={toggleTheme} />
           </div>
         </div>
       </motion.div>

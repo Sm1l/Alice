@@ -1,0 +1,21 @@
+.contactsadress {
+  // grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    &_s {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
