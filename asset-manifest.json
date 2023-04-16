@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Alice/static/css/main.da4ba105.css",
-    "main.js": "/Alice/static/js/main.ec1316f8.js",
+    "main.css": "/Alice/static/css/main.f3997d57.css",
+    "main.js": "/Alice/static/js/main.a6c01c87.js",
     "static/media/kvoka.jpg": "/Alice/static/media/kvoka.e2f2431fb9cdeb48221b.jpg",
     "static/media/HelveticaNeueCyr-Light.woff2": "/Alice/static/media/HelveticaNeueCyr-Light.ca1c9d28a98e39bc4088.woff2",
     "static/media/HelveticaNeueCyr-Medium.woff2": "/Alice/static/media/HelveticaNeueCyr-Medium.751c19bd96c1fdbe6c88.woff2",
-    "static/media/Liaslogo.svg": "/Alice/static/media/Liaslogo.42aea877d1eaea62ccdeb7d5010eb68a.svg",
+    "static/media/Liaslogo.svg": "/Alice/static/media/Liaslogo.733a83c38b4da75dcc752810cc5d4249.svg",
     "index.html": "/Alice/index.html",
-    "main.da4ba105.css.map": "/Alice/static/css/main.da4ba105.css.map",
-    "main.ec1316f8.js.map": "/Alice/static/js/main.ec1316f8.js.map"
+    "main.f3997d57.css.map": "/Alice/static/css/main.f3997d57.css.map",
+    "main.a6c01c87.js.map": "/Alice/static/js/main.a6c01c87.js.map"
   },
   "entrypoints": [
-    "static/css/main.da4ba105.css",
-    "static/js/main.ec1316f8.js"
+    "static/css/main.f3997d57.css",
+    "static/js/main.a6c01c87.js"
   ]
 }
