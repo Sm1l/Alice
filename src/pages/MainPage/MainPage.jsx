@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../store/themeSlice";
 
-import { motion, progress, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 import SocialWhatsApp from "../../components/Social/SocialWhatsApp";
@@ -24,11 +24,6 @@ const MainPage = ({ offsetY, scrollY }) => {
   };
 
   //*animation
-  const heightSizes = [400, 70];
-  const imageSizes = [150, 50];
-  const fontSizes = ["40px", "20px"];
-
-  //todo test-----------------------
 
   const containerVariants = {
     visible: {
