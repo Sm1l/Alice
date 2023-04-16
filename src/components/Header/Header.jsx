@@ -16,8 +16,6 @@ import SocialTelephone from "../Social/SocialTelephone";
 import SocialInstagram from "../Social/SocialInstagram";
 import SocialEmail from "../Social/SocialEmail";
 
-import Checkbox from "../Checkbox";
-
 import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
@@ -48,12 +46,6 @@ const Header = ({ offsetY, scrollY }) => {
       <div className="header__top">
         <div className="header__logocontainer">
           <NavLink to="/">
-            {/* <motion.img
-              src={logo}
-              alt="Соловьёва Алиса логотип"
-              className="header__logo"
-              style={{ width: logoWidth, height: logoWidth }}
-            /> */}
             <motion.div style={{ width: logoWidth, height: logoWidth }}>
               <Logo className="header__logo" width={logoWidth} height={logoWidth} />
             </motion.div>
@@ -100,8 +92,7 @@ const Header = ({ offsetY, scrollY }) => {
             </ul>
           </div>
           <div className="header__toggle">
-            {/* <Checkbox handleClick={toggleTheme} /> */}
-            <Classic duration={750} width={50} onToggle={toggleTheme} />
+            <Classic duration={750} onToggle={toggleTheme} />
           </div>
         </div>
       </motion.div>
