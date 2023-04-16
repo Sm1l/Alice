@@ -52,9 +52,11 @@
     width: 300px;
     height: 300px;
   }
+
   &__title {
     font-size: 50px;
   }
+
   &__linkcontainer {
     display: flex;
     width: 100%;
@@ -62,6 +64,15 @@
     justify-content: space-around;
     gap: 20px;
   }
+
+  &__link {
+    // font-size: 30px;
+  }
+
+  &__p {
+    font-size: 40px;
+  }
+
   &__text {
   }
 
