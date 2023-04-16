@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import headerReducer from "./headerSlice";
+import themeSlice from "./themeSlice";
 
 export default configureStore({
   reducer: {
-    header: headerReducer,
+    theme: themeSlice,
   },
 });
