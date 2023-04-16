@@ -7,6 +7,10 @@ import { useDispatch, useSelector } from "react-redux";
 import logo from "./img/Liaslogo.svg";
 import { ReactComponent as Logo } from "./img/Liaslogo.svg";
 
+import "@theme-toggles/react/css/Classic.css";
+
+import { Classic } from "@theme-toggles/react";
+
 import SocialWhatsApp from "../Social/SocialWhatsApp";
 import SocialTelephone from "../Social/SocialTelephone";
 import SocialInstagram from "../Social/SocialInstagram";
@@ -96,7 +100,8 @@ const Header = ({ offsetY, scrollY }) => {
             </ul>
           </div>
           <div className="header__toggle">
-            <Checkbox handleClick={toggleTheme} />
+            {/* <Checkbox handleClick={toggleTheme} /> */}
+            <Classic duration={750} width={50} onToggle={toggleTheme} />
           </div>
         </div>
       </motion.div>

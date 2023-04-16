@@ -6,7 +6,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   // flex: 1 30%;
-  background-color: $color-black;
+  background-color: var(--colors-ui-base);
   writing-mode: vertical-rl;
   transform: scale(-1);
 
