@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
-import { motion, useTransform } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { animate, motion, useTransform } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
 import { toggleTheme } from "../../store/themeSlice";
+import { toggleMenuIndex } from "../../store/menuSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import { ReactComponent as Logo } from "./img/Liaslogo.svg";
@@ -18,7 +19,7 @@ import SocialEmail from "../Social/SocialEmail";
 import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
-  //*animation
+  //*animation header
   const heightSizes = [400, 70];
   const imageSizes = [150, 50];
   const fontSizes = ["40px", "20px"];
@@ -28,14 +29,41 @@ const Header = ({ offsetY, scrollY }) => {
   const fontSize = useTransform(scrollY, offsetY, fontSizes);
   const opacity = useTransform(scrollY, [20, 300], [1, 0]);
 
-  //*theme
+  //*animation menu
+  // const [activeMenuIndex, setActiveMenuIndex] = useState(0);
   const dispatch = useDispatch();
+  const activeMenuIndex = useSelector((state) => state.menu.menuIndex);
+  const toggleActiveMenuIndexTeacher = () => dispatch(toggleMenuIndex({ menuIndex: 0 }));
+  const toggleActiveMenuIndexActress = () => dispatch(toggleMenuIndex({ menuIndex: 1 }));
+
+  useEffect(() => {
+    localStorage.setItem("LiasMenuIndex", JSON.stringify(activeMenuIndex));
+    return () => {};
+  }, [activeMenuIndex]);
+
+  function ActiveLine() {
+    return (
+      <motion.div
+        layoutId="activeMenuItem"
+        style={{
+          width: "100%",
+          height: "4px",
+          position: "absolute",
+          bottom: "-4px",
+          backgroundColor: "var(--colors-link-hover)",
+        }}
+      ></motion.div>
+    );
+  }
+  // };
+  //*theme
   const theme = useSelector((store) => store.theme.theme);
   const changeTheme = () => {
     dispatch(toggleTheme());
   };
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("LiasTheme", JSON.stringify(theme));
   }, [theme]);
 
   return (
@@ -51,7 +79,7 @@ const Header = ({ offsetY, scrollY }) => {
             Соловьёва Алиса
           </motion.h2>
         </div>
-        <nav className="header__link-container">
+        {/* <nav className="header__link-container">
           <NavLink
             className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
             to="/speech"
@@ -63,6 +91,40 @@ const Header = ({ offsetY, scrollY }) => {
             to="/actress"
           >
             <motion.p style={{ fontSize }}>Актриса</motion.p>
+          </NavLink>
+        </nav> */}
+        <nav className="header__link-container">
+          <NavLink
+            // className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+            className={"header__link"}
+            to="/speech"
+            // isSelected={activeMenuIndex === 0}
+            // onClick={() => toggleActiveMenuIndex({0})}
+            onClick={toggleActiveMenuIndexTeacher}
+            // initial={{ color: "var(--colors-link-hover)" }}
+            // animate={{
+            //   color: activeMenuIndex === 0 ? "var(--colors-link-hover)" : "var(--colors-link)",
+            // }}
+            // transition={{ duration: 1 }}
+          >
+            <motion.p style={{ fontSize }}>Преподаватель</motion.p>
+            {activeMenuIndex === 0 && <ActiveLine />}
+          </NavLink>
+          <NavLink
+            // className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+            className={"header__link"}
+            to="/actress"
+            // isSelected={activeMenuIndex === 1}
+            // onClick={() => toggleActiveMenuIndex(1)}
+            onClick={toggleActiveMenuIndexActress}
+            // initial={{ color: "var(--colors-link-hover)" }}
+            // animate={{
+            //   color: activeMenuIndex === 1 ? "var(--colors-link-hover)" : "var(--colors-link)",
+            // }}
+            // transition={{ duration: 1 }}
+          >
+            <motion.p style={{ fontSize }}>Актриса</motion.p>
+            {activeMenuIndex === 1 && <ActiveLine />}
           </NavLink>
         </nav>
       </div>

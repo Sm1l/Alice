@@ -26,6 +26,16 @@
     justify-content: center;
     padding: 100px;
     gap: 30px;
+
+    background-image: url("./img/background-beige.avif");
+    // background-image: url("./img/background-beige.avif");
+    // background-image: -webkit-image-set(url("./img/background-beige.avif"), url("./img/background-beige.webp"));
+    // background-image: image-set(
+    //   url("./img/background-beige.avif") type("image/avif"),
+    //   url("./img/background-beige.webp") type("image/webp"),
+    //   url("./img/background-beige.jpg") type("image/jpg")
+    // );
+    background-repeat: repeat;
     background-color: var(--colors-bg);
   }
 
