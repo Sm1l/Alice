@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/Alice/static/css/main.f3997d57.css",
-    "main.js": "/Alice/static/js/main.a6c01c87.js",
-    "static/media/kvoka.jpg": "/Alice/static/media/kvoka.e2f2431fb9cdeb48221b.jpg",
+    "main.css": "/Alice/static/css/main.8fcc7cf4.css",
+    "main.js": "/Alice/static/js/main.b46a6552.js",
+    "static/media/design-space-paper-textured-background.jpg": "/Alice/static/media/design-space-paper-textured-background.3288794ac1bcfabe24ce.jpg",
+    "static/media/background-paint.avif": "/Alice/static/media/background-paint.b2676cac8a8c83bc4dac.avif",
+    "static/media/background-dark-ui.avif": "/Alice/static/media/background-dark-ui.568f52e2b7270f367a75.avif",
+    "static/media/background-light.avif": "/Alice/static/media/background-light.006dacea9e69d1fb07bc.avif",
+    "static/media/background-dark.avif": "/Alice/static/media/background-dark.96dcd705f941488c2ebc.avif",
     "static/media/HelveticaNeueCyr-Light.woff2": "/Alice/static/media/HelveticaNeueCyr-Light.ca1c9d28a98e39bc4088.woff2",
     "static/media/HelveticaNeueCyr-Medium.woff2": "/Alice/static/media/HelveticaNeueCyr-Medium.751c19bd96c1fdbe6c88.woff2",
+    "static/media/IMG_0209 1.avif": "/Alice/static/media/IMG_0209 1.014e5f586a4fb980949d.avif",
     "static/media/Liaslogo.svg": "/Alice/static/media/Liaslogo.733a83c38b4da75dcc752810cc5d4249.svg",
     "index.html": "/Alice/index.html",
-    "main.f3997d57.css.map": "/Alice/static/css/main.f3997d57.css.map",
-    "main.a6c01c87.js.map": "/Alice/static/js/main.a6c01c87.js.map"
+    "static/media/ArrowRoght.svg": "/Alice/static/media/ArrowRoght.d05b841c0559a48ea642ed9553ffa08b.svg",
+    "static/media/Arrow.svg": "/Alice/static/media/Arrow.2c46d15de54875c1efd4e018f0d11db7.svg",
+    "main.8fcc7cf4.css.map": "/Alice/static/css/main.8fcc7cf4.css.map",
+    "main.b46a6552.js.map": "/Alice/static/js/main.b46a6552.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3997d57.css",
-    "static/js/main.a6c01c87.js"
+    "static/css/main.8fcc7cf4.css",
+    "static/js/main.b46a6552.js"
   ]
 }
