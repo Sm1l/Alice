@@ -13,13 +13,14 @@ body[data-theme="light"] {
   // --background-image: "./img/background-beige.avif";
 }
 body[data-theme="light"] header,
-body[data-theme="light"] footer {
-  background-image: url("../../base/theme/img/background-light.avif");
-  background-size: auto;
+body[data-theme="light"] footer,
+body[data-theme="light"] .ui-block {
+  background-image: url("../../base/theme/img/background-paper-white.avif");
+  background-size: cover;
 }
 body[data-theme="light"] main {
-  background-image: url("../../base/theme/img/test/design-space-paper-textured-background.jpg");
-  background-size: cover;
+  background-image: url("../../base/theme/img/background-light.avif");
+  background-size: auto;
   // background-image: url("../../base/theme/img/background-dark.avif");
   // background-size: auto;
   // background-image: url("../../base/theme/img/background-dark-ui.avif");
@@ -44,16 +45,19 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="dark"] header,
-body[data-theme="dark"] footer {
+body[data-theme="dark"] footer,
+body[data-theme="dark"] .ui-block {
   // background-image: url("../../base/theme/img/background-dark.avif");
   // background-size: auto;
-  background-image: url("../../base/theme/img/background-dark-ui.avif");
+  // background-image: url("../../base/theme/img/background-dark-ui.avif");
+  // background-size: cover;
+  background-image: url("../../base/theme/img/background-paper-black.avif");
   background-size: cover;
 }
 
 body[data-theme="dark"] main {
-  // background-image: url("../../base/theme/img/background-dark.avif");
-  // background-size: auto;
+  background-image: url("../../base/theme/img/background-dark.avif");
+  background-size: auto;
   // background-image: url("../../base/theme/img/background-dark-ui.avif");
   // background-size: cover;
 }
@@ -61,4 +65,9 @@ body[data-theme="dark"] main {
 body {
   color: --colors-text;
   background-color: --colors-bg;
+}
+
+.ui-block {
+  background-color: var(--colors-ui-base);
+  box-shadow: var(--shadow);
 }

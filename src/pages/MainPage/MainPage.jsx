@@ -40,11 +40,11 @@ const MainPage = () => {
     },
   };
 
-  const childVariants = {
+  const childVariantsBottom = {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 1 },
+      transition: { duration: 2 },
     },
     hidden: {
       y: 3000,
@@ -52,17 +52,43 @@ const MainPage = () => {
     },
   };
 
+  const childVariantsLeft = {
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { delay: 1, duration: 3 },
+    },
+    hidden: {
+      x: -3000,
+      opacity: 0,
+    },
+  };
+
+  const childVariantsRight = {
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { delay: 1, duration: 3 },
+    },
+    hidden: {
+      x: 3000,
+      opacity: 0,
+    },
+  };
+
   const svgVariants = {
     visible: {
       opacity: 1,
+      // pathLength: 1,
       transition: {
         duration: 1,
-        delayChildren: 3,
+        delayChildren: 2,
         staggerChildren: 0.5,
       },
     },
     hidden: {
       opacity: 0,
+      // pathLength: 0,
     },
   };
 
@@ -118,7 +144,8 @@ const MainPage = () => {
         </motion.div>
       </header> */}
       <motion.main className="mainpage__main" variants={containerVariants} initial="hidden" animate="visible">
-        <motion.div className="mainpage__logocontainer" variants={childVariants}>
+        <motion.div className="mainpage__logocontainer">
+          {/* variants={childVariants}> */}
           <motion.svg
             className="mainpage__logo"
             viewBox="0 0 79 80"
@@ -169,29 +196,33 @@ const MainPage = () => {
                 opacity: 1,
                 pathLength: 1,
                 // offsetDistance: "100%",
-                transition: { duration: 5, delay: 1 },
+                transition: { duration: 4, delay: 1 },
               }}
             />
           </motion.svg>
         </motion.div>
-        <motion.h1 variants={childVariants} className="mainpage__title title">
+        <motion.h1 variants={childVariantsBottom} className="mainpage__title title">
           Соловьёва Алиса
         </motion.h1>
-        <motion.nav className="mainpage__linkcontainer" variants={childVariants}>
-          <NavLink
-            className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-            to="/speech"
-            onClick={toggleActiveMenuIndexTeacher}
-          >
-            <motion.p className="mainpage__p">Преподаватель</motion.p>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-            to="/actress"
-            onClick={toggleActiveMenuIndexActress}
-          >
-            <motion.p className="mainpage__p">Актриса</motion.p>
-          </NavLink>
+        <motion.nav className="mainpage__linkcontainer">
+          <motion.div className="mainpage__item" variants={childVariantsLeft}>
+            <NavLink
+              className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+              to="/speech"
+              onClick={toggleActiveMenuIndexTeacher}
+            >
+              <motion.p className="mainpage__p">Ораторское искусство</motion.p>
+            </NavLink>
+          </motion.div>
+          <motion.div className="mainpage__item" variants={childVariantsRight}>
+            <NavLink
+              className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+              to="/actress"
+              onClick={toggleActiveMenuIndexActress}
+            >
+              <motion.p className="mainpage__p">Театр и кино</motion.p>
+            </NavLink>
+          </motion.div>
         </motion.nav>
       </motion.main>
       {/* <footer className="mainpage__footer">

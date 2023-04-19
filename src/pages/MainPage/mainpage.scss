@@ -38,27 +38,7 @@ body[data-theme="dark"] .mainpage__main {
     padding: 100px;
     gap: 30px;
 
-    // background-image: url("./img/background-beige.avif");
-    // background-image: url("./img/background-dark.avif");
-    // background-image: url("./img/background-light.avif");
-    // background-image: url("./img/test/background-of-paint-still-life.jpg");
-    //!выбрать, уменьшить, поменять на background
-
-    // background-image: url("./img/test/black-fabric-textile-textured-background.jpg");
-    // background-image: url("./img/test/fabric-textured.jpg");
-    // background-image: url("./img/test/gray-fabric-cloth-texture-abstract-background-furniture-upholstery.jpg");
-    // background-image: url("./img/test/yellow-linen-textile-textured-background.jpg");
-    // background-image: url("./img/test/gray-fabric-cloth-texture-abstract-background-furniture-upholstery.jpg");
-    //
-    // background-image: url("./img/background-beige.avif");
-    // background-image: -webkit-image-set(url("./img/background-beige.avif"), url("./img/background-beige.webp"));
-    // background-image: image-set(
-    //   url("./img/background-beige.avif") type("image/avif"),
-    //   url("./img/background-beige.webp") type("image/webp"),
-    //   url("./img/background-beige.jpg") type("image/jpg")
-    // );
     background-repeat: repeat;
-
     background-color: var(--colors-bg);
   }
 
@@ -94,8 +74,9 @@ body[data-theme="dark"] .mainpage__main {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
+    text-align: center;
   }
 
   &__link {
@@ -107,6 +88,10 @@ body[data-theme="dark"] .mainpage__main {
   }
 
   &__text {
+  }
+
+  &__item {
+    flex: 1;
   }
 
   &__contacts-list {

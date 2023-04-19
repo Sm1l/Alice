@@ -8,7 +8,7 @@ import arrow from "./img/Arrow.svg";
 const SpeechWelcome = () => {
   return (
     <div className="speechwelcome">
-      <h1 className="speechwelcome__title title">Сценическая речь и актерское мастерство</h1>
+      <h1 className="speechwelcome__title title">Ораторское искусство и сценическое движение</h1>
       <div className="speechwelcome__image _ibg">
         <img src={image} alt="Фотография Соловьевой Алисы" />
       </div>

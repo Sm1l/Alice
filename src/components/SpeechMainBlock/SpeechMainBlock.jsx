@@ -3,6 +3,8 @@ import { motion, useTransform } from "framer-motion";
 
 import SpeechWelcome from "../SpeechWelcome";
 import About from "../About";
+import Education from "../Education";
+import Work from "../Work";
 
 import "./speechmainblock.scss";
 
@@ -13,6 +15,8 @@ const SpeechMainBlock = ({ offsetY, scrollY }) => {
     <motion.main className="speechmainblock" style={{ marginTop: marginTop }}>
       <SpeechWelcome />
       <About />
+      <Education />
+      <Work />
     </motion.main>
   );
 };

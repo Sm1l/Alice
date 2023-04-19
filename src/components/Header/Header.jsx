@@ -107,7 +107,7 @@ const Header = ({ offsetY, scrollY }) => {
             // }}
             // transition={{ duration: 1 }}
           >
-            <motion.p style={{ fontSize }}>Преподаватель</motion.p>
+            <motion.p style={{ fontSize }}>Ораторское искусство</motion.p>
             {activeMenuIndex === 0 && <ActiveLine />}
           </NavLink>
           <NavLink
@@ -123,7 +123,7 @@ const Header = ({ offsetY, scrollY }) => {
             // }}
             // transition={{ duration: 1 }}
           >
-            <motion.p style={{ fontSize }}>Актриса</motion.p>
+            <motion.p style={{ fontSize }}>Театр и кино</motion.p>
             {activeMenuIndex === 1 && <ActiveLine />}
           </NavLink>
         </nav>

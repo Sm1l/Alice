@@ -1,16 +1,3 @@
-// body[data-theme="light"] .speechmainblock {
-//   background-image: url("../../base/theme/img/background-light.avif");
-//   // background-image: url("../../base/theme/img/background-beige.avif");
-//   background-size: auto;
-// }
-
-body[data-theme="dark"] .speechmainblock {
-  background-image: url("../../base/theme/img/background-dark.avif");
-  background-size: auto;
-  // background-image: url("../../base/theme/img/background-dark-ui.avif");
-  // background-size: cover;
-}
-
 .speechmainblock {
   display: flex;
   flex-direction: column;
