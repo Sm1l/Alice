@@ -1,0 +1,45 @@
+.speechwelcome {
+  display: grid;
+  width: 100%;
+  gap: 30px;
+  grid-template-rows: auto minmax(300px, auto) auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "title title title"
+    "image image ."
+    "text name name";
+  align-items: center;
+  &__title {
+    grid-area: title;
+    font-size: 80px;
+  }
+  &__image {
+    grid-area: image;
+    padding: 0px 0px 40% 0;
+
+    & img {
+      border-radius: 40px;
+    }
+  }
+  &__text-container {
+    grid-area: text;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    align-self: flex-end;
+    justify-self: end;
+    text-align: end;
+  }
+  &__text {
+  }
+  &__name {
+    display: flex;
+    grid-area: name;
+    font-size: 120px;
+    line-height: 10%;
+
+    text-align: end;
+    vertical-align: text-bottom;
+  }
+}

@@ -1,0 +1,64 @@
+//*light
+
+body[data-theme="light"] {
+  --colors-text: #222628;
+  --colors-bg: #cfcecc;
+  // --colors-ui-base: #d4d2cc;
+  --colors-ui-base: #bcbcbc;
+  --colors-link: #4c4c4c;
+  --colors-link-hover: #e57d07;
+
+  --shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
+
+  // --background-image: "./img/background-beige.avif";
+}
+body[data-theme="light"] header,
+body[data-theme="light"] footer {
+  background-image: url("../../base/theme/img/background-light.avif");
+  background-size: auto;
+}
+body[data-theme="light"] main {
+  background-image: url("../../base/theme/img/test/design-space-paper-textured-background.jpg");
+  background-size: cover;
+  // background-image: url("../../base/theme/img/background-dark.avif");
+  // background-size: auto;
+  // background-image: url("../../base/theme/img/background-dark-ui.avif");
+  // background-size: cover;
+}
+
+//*dark
+
+body[data-theme="dark"] {
+  // --colors-text: #ffffff;
+  --colors-text: #e8e6e6;
+  --colors-bg: #202c37;
+  // --colors-ui-base: #2b3945;
+  --colors-ui-base: #464b4f;
+  // --colors-link: #de8927;
+  --colors-link: #d8a264;
+  --colors-link-hover: #e57d07;
+
+  --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
+
+  // --background-image: "./img/background-beige.avif";
+}
+
+body[data-theme="dark"] header,
+body[data-theme="dark"] footer {
+  // background-image: url("../../base/theme/img/background-dark.avif");
+  // background-size: auto;
+  background-image: url("../../base/theme/img/background-dark-ui.avif");
+  background-size: cover;
+}
+
+body[data-theme="dark"] main {
+  // background-image: url("../../base/theme/img/background-dark.avif");
+  // background-size: auto;
+  // background-image: url("../../base/theme/img/background-dark-ui.avif");
+  // background-size: cover;
+}
+
+body {
+  color: --colors-text;
+  background-color: --colors-bg;
+}

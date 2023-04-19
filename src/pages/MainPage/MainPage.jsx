@@ -13,8 +13,6 @@ import SocialEmail from "../../components/Social/SocialEmail";
 import SocialVkontakte from "../../components/Social/SocialVkontakte";
 import SocialKinopoisk from "../../components/Social/SocialKinopoisk";
 
-import { useLocalStorage } from "../../hooks/useLocalSorage";
-
 import { Classic } from "@theme-toggles/react";
 
 import "./mainpage.scss";
@@ -98,9 +96,18 @@ const MainPage = () => {
     localStorage.setItem("LiasTheme", JSON.stringify(theme));
   }, [theme]);
 
+  //!надо разобраться, что-то в этом есть!
+  // useEffect(() => {
+  //   if (theme === "dark") {
+  //     document.querySelector(".theme-toggle").classList.add("theme-toggle--toggled");
+  //     console.log("dark");
+  //   }
+  // }, []);
+
   return (
     <div className="mainpage">
-      <header className="mainpage__header ">
+      {/*//! пока убрал header,footer   */}
+      {/* <header className="mainpage__header ">
         <motion.div
           className="mainpage__toggle "
           initial={{ x: -1000, opacity: 0 }}
@@ -109,7 +116,7 @@ const MainPage = () => {
         >
           <Classic duration={750} onToggle={changeTheme} />
         </motion.div>
-      </header>
+      </header> */}
       <motion.main className="mainpage__main" variants={containerVariants} initial="hidden" animate="visible">
         <motion.div className="mainpage__logocontainer" variants={childVariants}>
           <motion.svg
@@ -187,7 +194,7 @@ const MainPage = () => {
           </NavLink>
         </motion.nav>
       </motion.main>
-      <footer className="mainpage__footer">
+      {/* <footer className="mainpage__footer">
         <motion.div
           className="mainpage__contacts"
           initial={{ x: 1000, opacity: 0 }}
@@ -215,7 +222,7 @@ const MainPage = () => {
             </li>
           </ul>
         </motion.div>
-      </footer>
+      </footer> */}
     </div>
   );
 };

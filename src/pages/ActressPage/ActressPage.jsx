@@ -1,10 +1,10 @@
 import React from "react";
-import MainActress from "../../components/MainActress";
+import ActressMainBlock from "../../components/ActressMainBlock/ActressMainBlock";
 
 import "./actresspage.scss";
 
 const ActressPage = ({ offsetY, scrollY }) => {
-  return <MainActress offsetY={offsetY} scrollY={scrollY} />;
+  return <ActressMainBlock offsetY={offsetY} scrollY={scrollY} />;
 };
 
 export default ActressPage;
