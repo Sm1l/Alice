@@ -8,7 +8,9 @@ const Work = () => {
   return (
     <section className="work ">
       <motion.div className="work__title-container">
-        <h3 className="work__title title">Моя работа</h3>
+        <h3 className="work__title title">
+          Моя <br /> работа
+        </h3>
         <button className="work__button">
           <img src={arrow} alt="Стрелка" />
         </button>
