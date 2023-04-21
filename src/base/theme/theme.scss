@@ -2,11 +2,11 @@
 
 body[data-theme="light"] {
   --colors-text: #222628;
-  --colors-bg: #ededed;
+  --colors-bg: #b6c3ca;
   // --colors-ui-base: #d4d2cc;
-  --colors-ui-base: #bcbcbc;
+  --colors-ui-base: #ffffff;
   --colors-link: #4c4c4c;
-  --colors-link-hover: #e57d07;
+  --colors-link-hover: #b6c3ca;
 
   --shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
 
@@ -15,7 +15,7 @@ body[data-theme="light"] {
 body[data-theme="light"] header,
 body[data-theme="light"] footer {
   // body[data-theme="light"] .ui-block {
-  background-image: linear-gradient(90deg, #ffffff, #d8ffed, #b5faff, #aec3ff);
+  background-image: linear-gradient(90deg, #b6c3ca, #ffffff);
   // background-image: url("../../base/theme/img/background-paper-white.webp");
   // background-size: cover;
   // box-shadow: var(--shadow);
@@ -24,25 +24,18 @@ body[data-theme="light"] footer {
 body[data-theme="light"] .ui-block {
   // background-image: url("../../base/theme/img/background-paper-white.webp");
   // background-size: cover;
-  background-image: linear-gradient(90deg, #ffffff, #d8ffed, #b5faff, #aec3ff);
+  background-image: linear-gradient(90deg, #b6c3ca, #ffffff);
 }
 
 body[data-theme="light"] main {
-  background-image: linear-gradient(90deg, #ffffff, #d8ffed, #b5faff, #aec3ff);
-
-  // background-image: url("../../base/theme/img/background-light.avif");
-  // background-size: auto;
-  // background-image: url("../../base/theme/img/background-dark.avif");
-  // background-size: auto;
-  // background-image: url("../../base/theme/img/background-dark-ui.avif");
-  // background-size: cover;
+  background-image: linear-gradient(90deg, #b6c3ca, #ffffff);
 }
 
 //*dark
 
 body[data-theme="dark"] {
   // --colors-text: #ffffff;
-  --colors-text: #e8e6e6;
+  --colors-text: #dbdada;
   --colors-bg: #353a3e;
   // --colors-ui-base: #2b3945;
   --colors-ui-base: #464b4f;
@@ -58,21 +51,11 @@ body[data-theme="dark"] {
 body[data-theme="dark"] header,
 body[data-theme="dark"] footer,
 body[data-theme="dark"] .ui-block {
-  background-image: url("../../base/theme/img/background-paper-black.avif");
-  background-size: cover;
-  // background-image: url("../../base/theme/img/background-dark.avif");
-  // background-size: auto;
-  // background-image: url("../../base/theme/img/background-dark-ui.avif");
-  // background-size: cover;
-  // background-image: url("../../base/theme/img/background-dark.avif");
-  // background-size: auto;
+  background-image: linear-gradient(90deg, #121212, #333333, #525252);
 }
 
 body[data-theme="dark"] main {
-  // background-image: url("../../base/theme/img/background-dark.avif");
-  // background-size: auto;
-  // background-image: url("../../base/theme/img/background-dark-ui.avif");
-  // background-size: cover;
+  background-image: linear-gradient(90deg, #121212, #333333, #525252);
 }
 
 body {
