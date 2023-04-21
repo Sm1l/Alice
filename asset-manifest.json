@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Alice/static/css/main.c35f1f99.css",
+    "main.css": "/Alice/static/css/main.5fad1bbd.css",
     "main.js": "/Alice/static/js/main.9175619f.js",
     "static/media/background-paper-white.webp": "/Alice/static/media/background-paper-white.3ab2ce5942cc4138adf1.webp",
-    "static/media/background-paper-black.avif": "/Alice/static/media/background-paper-black.08e9ac2024f9b15c6c17.avif",
     "static/media/background-dark.avif": "/Alice/static/media/background-dark.96dcd705f941488c2ebc.avif",
     "static/media/HelveticaNeueCyr-Light.woff2": "/Alice/static/media/HelveticaNeueCyr-Light.ca1c9d28a98e39bc4088.woff2",
     "static/media/HelveticaNeueCyr-Medium.woff2": "/Alice/static/media/HelveticaNeueCyr-Medium.751c19bd96c1fdbe6c88.woff2",
@@ -13,11 +12,11 @@
     "static/media/ArrowRoght.svg": "/Alice/static/media/ArrowRoght.d05b841c0559a48ea642ed9553ffa08b.svg",
     "static/media/ArrowLeft.svg": "/Alice/static/media/ArrowLeft.69cbd3b4a4369abb25d7ac9d0d8f573c.svg",
     "static/media/Arrow.svg": "/Alice/static/media/Arrow.2c46d15de54875c1efd4e018f0d11db7.svg",
-    "main.c35f1f99.css.map": "/Alice/static/css/main.c35f1f99.css.map",
+    "main.5fad1bbd.css.map": "/Alice/static/css/main.5fad1bbd.css.map",
     "main.9175619f.js.map": "/Alice/static/js/main.9175619f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c35f1f99.css",
+    "static/css/main.5fad1bbd.css",
     "static/js/main.9175619f.js"
   ]
 }
