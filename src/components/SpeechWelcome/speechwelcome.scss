@@ -11,7 +11,7 @@
   align-items: center;
   &__title {
     grid-area: title;
-    font-size: 80px;
+    font-size: 62px;
   }
   &__image {
     grid-area: image;
@@ -36,7 +36,7 @@
   &__name {
     display: flex;
     grid-area: name;
-    font-size: 120px;
+    font-size: 88px;
     line-height: 10%;
 
     text-align: end;

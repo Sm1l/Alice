@@ -1,7 +1,6 @@
 body[data-theme="light"] .mainpage__main {
-  background-image: url("../../base/theme/img/background-light.avif");
-  // background-image: url("./img/background-beige.avif");
-  background-size: auto;
+  background-image: url("../../base/theme/img/background-paper-white.webp");
+  background-size: cover;
 }
 
 body[data-theme="dark"] .mainpage__main {
@@ -26,7 +25,8 @@ body[data-theme="dark"] .mainpage__main {
     gap: 20px;
     padding: 20px 100px;
     //  background-color: var(--colors-bg);
-    background-color: transparent;
+    // background-color: transparent;
+    // background-image: none;
   }
   &__main {
     display: flex;
@@ -54,6 +54,7 @@ body[data-theme="dark"] .mainpage__main {
     padding: 20px 100px;
     //  background-color: var(--colors-bg);
     background-color: transparent;
+    background-image: none;
   }
 
   //   &__logocontainer {
@@ -62,12 +63,12 @@ body[data-theme="dark"] .mainpage__main {
   //     margin-bottom: 20px;
   //   }
   &__logo {
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
   }
 
   &__title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   &__linkcontainer {
@@ -84,7 +85,7 @@ body[data-theme="dark"] .mainpage__main {
   }
 
   &__p {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   &__text {

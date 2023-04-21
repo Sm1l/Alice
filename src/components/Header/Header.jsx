@@ -20,9 +20,9 @@ import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
   //*animation header
-  const heightSizes = [400, 70];
-  const imageSizes = [150, 50];
-  const fontSizes = ["40px", "20px"];
+  const heightSizes = [200, 70];
+  const imageSizes = [100, 50];
+  const fontSizes = ["30px", "20px"];
 
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   const logoWidth = useTransform(scrollY, offsetY, imageSizes);
@@ -67,7 +67,7 @@ const Header = ({ offsetY, scrollY }) => {
   }, [theme]);
 
   return (
-    <motion.header className="header ui-block" style={{ height: headerHeight }}>
+    <motion.header className="header" style={{ height: headerHeight }}>
       <div className="header__top">
         <div className="header__logocontainer">
           <NavLink to="/">
@@ -79,27 +79,12 @@ const Header = ({ offsetY, scrollY }) => {
             Соловьёва Алиса
           </motion.h2>
         </div>
-        {/* <nav className="header__link-container">
-          <NavLink
-            className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-            to="/speech"
-          >
-            <motion.p style={{ fontSize }}>Преподаватель</motion.p>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-            to="/actress"
-          >
-            <motion.p style={{ fontSize }}>Актриса</motion.p>
-          </NavLink>
-        </nav> */}
+
         <nav className="header__link-container">
           <NavLink
             // className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
             className={"header__link"}
             to="/speech"
-            // isSelected={activeMenuIndex === 0}
-            // onClick={() => toggleActiveMenuIndex({0})}
             onClick={toggleActiveMenuIndexTeacher}
             // initial={{ color: "var(--colors-link-hover)" }}
             // animate={{
@@ -129,10 +114,6 @@ const Header = ({ offsetY, scrollY }) => {
         </nav>
       </div>
       <motion.div className="header__bottom" style={{ opacity }}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita odit esse quod rem perspiciatis. Officia
-          debitis libero officiis veritatis veniam, nemo ea in culpa voluptatem id, quod autem dolor.
-        </p>
         <div className="header__bottom-container">
           <div className="header__contacts contacts">
             <ul className="header__contacts-list">

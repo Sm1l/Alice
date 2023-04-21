@@ -95,9 +95,22 @@ const MainPage = () => {
   const svgChildVariants = {
     visible: {
       opacity: 1,
-      pathLength: 1,
+      // pathLength: 1,
       // offsetDistance: "100%",
       transition: { duration: 1 },
+    },
+    hidden: {
+      opacity: 0,
+      // pathLength: 0,
+      // offsetDistance: "0%",
+    },
+  };
+  const svgDotVariants = {
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      // offsetDistance: "100%",
+      transition: { delay: 4, duration: 1 },
     },
     hidden: {
       opacity: 0,
@@ -105,6 +118,20 @@ const MainPage = () => {
       // offsetDistance: "0%",
     },
   };
+  const borderVariants = {
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      // offsetDistance: "100%",
+      transition: { duration: 4, delay: 1 },
+    },
+    hidden: {
+      opacity: 0,
+      pathLength: 0,
+      // offsetDistance: "0%",
+    },
+  };
+
   //*animation menu links
   //*animation menu
   const activeMenuIndex = useSelector((state) => state.menu.menuIndex);
@@ -133,9 +160,9 @@ const MainPage = () => {
   return (
     <div className="mainpage">
       {/*//! пока убрал header,footer   */}
-      {/* <header className="mainpage__header ">
+      {/* <header className="mainpage__header">
         <motion.div
-          className="mainpage__toggle "
+          className="mainpage__toggle"
           initial={{ x: -1000, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 2 }}
@@ -145,10 +172,11 @@ const MainPage = () => {
       </header> */}
       <motion.main className="mainpage__main" variants={containerVariants} initial="hidden" animate="visible">
         <motion.div className="mainpage__logocontainer">
-          {/* variants={childVariants}> */}
           <motion.svg
             className="mainpage__logo"
-            viewBox="0 0 79 80"
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             variants={svgVariants}
@@ -157,47 +185,61 @@ const MainPage = () => {
           >
             <motion.path
               className="svg__l"
-              d="M12.28 13.58H16.03V31.76H26.92V35H12.28V13.58Z"
+              d="M12.052 12.722H15.427V29.084H25.228V32H12.052V12.722Z"
               fill="black"
               variants={svgChildVariants}
             />
-            <motion.path
-              variants={svgChildVariants}
+
+            <motion.line
               className="svg__i"
-              d="M56.89 13.58H60.31V16.82H56.89V13.58ZM56.89 19.49H60.31V35H56.89V19.49Z"
-              fill="#de8927"
+              x1="59.05"
+              y1="18"
+              x2="59.05"
+              y2="32"
+              stroke="#de8927"
+              stroke-width="3.1"
+              variants={svgChildVariants}
             />
             <motion.path
-              variants={svgChildVariants}
               className="svg__a"
-              d="M56.01 46.58H60L68.25 68H64.23L62.22 62.33H53.67L51.66 68H47.79L56.01 46.58ZM54.69 59.48H61.23L58.02 50.27H57.93L54.69 59.48Z"
+              d="M57.209 49.722H60.8L68.225 69H64.607L62.798 63.897H55.103L53.294 69H49.811L57.209 49.722ZM56.021 61.332H61.907L59.018 53.043H58.937L56.021 61.332Z"
               fill="black"
+              variants={svgChildVariants}
             />
             <motion.path
               className="svg__s"
-              d="M14.74 60.86C14.74 61.68 14.88 62.38 15.16 62.96C15.44 63.54 15.83 64.02 16.33 64.4C16.83 64.76 17.4 65.03 18.04 65.21C18.7 65.37 19.41 65.45 20.17 65.45C20.99 65.45 21.69 65.36 22.27 65.18C22.85 64.98 23.32 64.73 23.68 64.43C24.04 64.13 24.3 63.79 24.46 63.41C24.62 63.01 24.7 62.61 24.7 62.21C24.7 61.39 24.51 60.79 24.13 60.41C23.77 60.01 23.37 59.73 22.93 59.57C22.17 59.29 21.28 59.03 20.26 58.79C19.26 58.53 18.02 58.2 16.54 57.8C15.62 57.56 14.85 57.25 14.23 56.87C13.63 56.47 13.15 56.03 12.79 55.55C12.43 55.07 12.17 54.56 12.01 54.02C11.87 53.48 11.8 52.93 11.8 52.37C11.8 51.29 12.02 50.36 12.46 49.58C12.92 48.78 13.52 48.12 14.26 47.6C15 47.08 15.84 46.7 16.78 46.46C17.72 46.2 18.67 46.07 19.63 46.07C20.75 46.07 21.8 46.22 22.78 46.52C23.78 46.8 24.65 47.23 25.39 47.81C26.15 48.39 26.75 49.11 27.19 49.97C27.63 50.81 27.85 51.79 27.85 52.91H24.1C24 51.53 23.53 50.56 22.69 50C21.85 49.42 20.78 49.13 19.48 49.13C19.04 49.13 18.59 49.18 18.13 49.28C17.67 49.36 17.25 49.51 16.87 49.73C16.49 49.93 16.17 50.21 15.91 50.57C15.67 50.93 15.55 51.38 15.55 51.92C15.55 52.68 15.78 53.28 16.24 53.72C16.72 54.14 17.34 54.46 18.1 54.68C18.18 54.7 18.49 54.79 19.03 54.95C19.59 55.09 20.21 55.25 20.89 55.43C21.57 55.61 22.23 55.79 22.87 55.97C23.53 56.13 24 56.25 24.28 56.33C24.98 56.55 25.59 56.85 26.11 57.23C26.63 57.61 27.06 58.05 27.4 58.55C27.76 59.03 28.02 59.55 28.18 60.11C28.36 60.67 28.45 61.23 28.45 61.79C28.45 62.99 28.2 64.02 27.7 64.88C27.22 65.72 26.58 66.41 25.78 66.95C24.98 67.49 24.07 67.88 23.05 68.12C22.03 68.38 20.99 68.51 19.93 68.51C18.71 68.51 17.56 68.36 16.48 68.06C15.4 67.76 14.46 67.3 13.66 66.68C12.86 66.06 12.22 65.27 11.74 64.31C11.26 63.33 11.01 62.18 10.99 60.86H14.74Z"
+              d="M14.266 62.574C14.266 63.312 14.392 63.942 14.644 64.464C14.896 64.986 15.247 65.418 15.697 65.76C16.147 66.084 16.66 66.327 17.236 66.489C17.83 66.633 18.469 66.705 19.153 66.705C19.891 66.705 20.521 66.624 21.043 66.462C21.565 66.282 21.988 66.057 22.312 65.787C22.636 65.517 22.87 65.211 23.014 64.869C23.158 64.509 23.23 64.149 23.23 63.789C23.23 63.051 23.059 62.511 22.717 62.169C22.393 61.809 22.033 61.557 21.637 61.413C20.953 61.161 20.152 60.927 19.234 60.711C18.334 60.477 17.218 60.18 15.886 59.82C15.058 59.604 14.365 59.325 13.807 58.983C13.267 58.623 12.835 58.227 12.511 57.795C12.187 57.363 11.953 56.904 11.809 56.418C11.683 55.932 11.62 55.437 11.62 54.933C11.62 53.961 11.818 53.124 12.214 52.422C12.628 51.702 13.168 51.108 13.834 50.64C14.5 50.172 15.256 49.83 16.102 49.614C16.948 49.38 17.803 49.263 18.667 49.263C19.675 49.263 20.62 49.398 21.502 49.668C22.402 49.92 23.185 50.307 23.851 50.829C24.535 51.351 25.075 51.999 25.471 52.773C25.867 53.529 26.065 54.411 26.065 55.419H22.69C22.6 54.177 22.177 53.304 21.421 52.8C20.665 52.278 19.702 52.017 18.532 52.017C18.136 52.017 17.731 52.062 17.317 52.152C16.903 52.224 16.525 52.359 16.183 52.557C15.841 52.737 15.553 52.989 15.319 53.313C15.103 53.637 14.995 54.042 14.995 54.528C14.995 55.212 15.202 55.752 15.616 56.148C16.048 56.526 16.606 56.814 17.29 57.012C17.362 57.03 17.641 57.111 18.127 57.255C18.631 57.381 19.189 57.525 19.801 57.687C20.413 57.849 21.007 58.011 21.583 58.173C22.177 58.317 22.6 58.425 22.852 58.497C23.482 58.695 24.031 58.965 24.499 59.307C24.967 59.649 25.354 60.045 25.66 60.495C25.984 60.927 26.218 61.395 26.362 61.899C26.524 62.403 26.605 62.907 26.605 63.411C26.605 64.491 26.38 65.418 25.93 66.192C25.498 66.948 24.922 67.569 24.202 68.055C23.482 68.541 22.663 68.892 21.745 69.108C20.827 69.342 19.891 69.459 18.937 69.459C17.839 69.459 16.804 69.324 15.832 69.054C14.86 68.784 14.014 68.37 13.294 67.812C12.574 67.254 11.998 66.543 11.566 65.679C11.134 64.797 10.909 63.762 10.891 62.574H14.266Z"
               fill="black"
               variants={svgChildVariants}
             />
+
             <motion.rect
               className="svg__border"
               x="1"
               y="1"
-              width="77"
+              width="78"
               height="78"
               stroke="black"
-              strokeWidth="2"
-              initial={{
-                opacity: 0,
-                pathLength: 0,
-                // offsetDistance: "0%",
-              }}
-              animate={{
-                opacity: 1,
-                pathLength: 1,
-                // offsetDistance: "100%",
-                transition: { duration: 4, delay: 1 },
-              }}
+              stroke-width="2"
+              variants={borderVariants}
+            />
+            <motion.rect
+              className="svg__i_dot"
+              x="54.4"
+              y="13"
+              width="3"
+              height="3"
+              fill="#de8927"
+              variants={svgDotVariants}
+            />
+            <motion.rect
+              className="svg__i_dot"
+              x="60.6"
+              y="13"
+              width="3"
+              height="3"
+              fill="#de8927"
+              variants={svgDotVariants}
             />
           </motion.svg>
         </motion.div>
@@ -225,35 +267,6 @@ const MainPage = () => {
           </motion.div>
         </motion.nav>
       </motion.main>
-      {/* <footer className="mainpage__footer">
-        <motion.div
-          className="mainpage__contacts"
-          initial={{ x: 1000, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 2, delay: 2 }}
-        >
-          <ul className="mainpage__contacts-list">
-            <li className="mainpage__contacts-link">
-              <SocialTelephone />
-            </li>
-            <li className="mainpage__contacts-link">
-              <SocialWhatsApp />
-            </li>
-            <li className="mainpage__contacts-link">
-              <SocialInstagram />
-            </li>
-            <li className="mainpage__contacts-link">
-              <SocialEmail />
-            </li>
-            <li className="mainpage__contacts-link">
-              <SocialVkontakte />
-            </li>
-            <li className="mainpage__contacts-link">
-              <SocialKinopoisk />
-            </li>
-          </ul>
-        </motion.div>
-      </footer> */}
     </div>
   );
 };

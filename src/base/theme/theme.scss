@@ -2,7 +2,7 @@
 
 body[data-theme="light"] {
   --colors-text: #222628;
-  --colors-bg: #cfcecc;
+  --colors-bg: #ededed;
   // --colors-ui-base: #d4d2cc;
   --colors-ui-base: #bcbcbc;
   --colors-link: #4c4c4c;
@@ -13,14 +13,25 @@ body[data-theme="light"] {
   // --background-image: "./img/background-beige.avif";
 }
 body[data-theme="light"] header,
-body[data-theme="light"] footer,
-body[data-theme="light"] .ui-block {
-  background-image: url("../../base/theme/img/background-paper-white.avif");
-  background-size: cover;
+body[data-theme="light"] footer {
+  // body[data-theme="light"] .ui-block {
+  background-image: linear-gradient(90deg, #ffffff, #d8ffed, #b5faff, #aec3ff);
+  // background-image: url("../../base/theme/img/background-paper-white.webp");
+  // background-size: cover;
+  // box-shadow: var(--shadow);
 }
+
+body[data-theme="light"] .ui-block {
+  // background-image: url("../../base/theme/img/background-paper-white.webp");
+  // background-size: cover;
+  background-image: linear-gradient(90deg, #ffffff, #d8ffed, #b5faff, #aec3ff);
+}
+
 body[data-theme="light"] main {
-  background-image: url("../../base/theme/img/background-light.avif");
-  background-size: auto;
+  background-image: linear-gradient(90deg, #ffffff, #d8ffed, #b5faff, #aec3ff);
+
+  // background-image: url("../../base/theme/img/background-light.avif");
+  // background-size: auto;
   // background-image: url("../../base/theme/img/background-dark.avif");
   // background-size: auto;
   // background-image: url("../../base/theme/img/background-dark-ui.avif");
@@ -32,7 +43,7 @@ body[data-theme="light"] main {
 body[data-theme="dark"] {
   // --colors-text: #ffffff;
   --colors-text: #e8e6e6;
-  --colors-bg: #202c37;
+  --colors-bg: #353a3e;
   // --colors-ui-base: #2b3945;
   --colors-ui-base: #464b4f;
   // --colors-link: #de8927;
@@ -47,17 +58,19 @@ body[data-theme="dark"] {
 body[data-theme="dark"] header,
 body[data-theme="dark"] footer,
 body[data-theme="dark"] .ui-block {
+  background-image: url("../../base/theme/img/background-paper-black.avif");
+  background-size: cover;
   // background-image: url("../../base/theme/img/background-dark.avif");
   // background-size: auto;
   // background-image: url("../../base/theme/img/background-dark-ui.avif");
   // background-size: cover;
-  background-image: url("../../base/theme/img/background-paper-black.avif");
-  background-size: cover;
+  // background-image: url("../../base/theme/img/background-dark.avif");
+  // background-size: auto;
 }
 
 body[data-theme="dark"] main {
-  background-image: url("../../base/theme/img/background-dark.avif");
-  background-size: auto;
+  // background-image: url("../../base/theme/img/background-dark.avif");
+  // background-size: auto;
   // background-image: url("../../base/theme/img/background-dark-ui.avif");
   // background-size: cover;
 }

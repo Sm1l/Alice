@@ -7,7 +7,7 @@ import ContactsSocial from "../ContactsSocial/ContactsSocial";
 
 const Footer = () => {
   return (
-    <footer className="footer ui-block">
+    <footer className="footer">
       <div className="footer__top">
         {/* <div className="footer__contacts"></div>
         <div className="footer__social"></div> */}
