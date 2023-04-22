@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useTransform } from "framer-motion";
 
 import SpeechWelcome from "../SpeechWelcome";
+import Hello from "../Hello";
 import About from "../About";
 import Education from "../Education";
 import Work from "../Work";
@@ -14,6 +15,7 @@ const SpeechMainBlock = ({ offsetY, scrollY }) => {
   return (
     <motion.main className="speechmainblock" style={{ marginTop: marginTop }}>
       <SpeechWelcome />
+      <Hello />
       <About />
       <Education />
       <Work />

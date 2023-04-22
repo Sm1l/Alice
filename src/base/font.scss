@@ -14,11 +14,13 @@
 //   font-weight: 500;
 //   font-style: normal;
 // }
+html {
+  font-size: 62.5%;
+}
 
-html,
 body {
   color: var(--colors-text);
-  font-size: 18px;
+  font-size: 2rem;
   // font-family: "Helvetica Neue", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;

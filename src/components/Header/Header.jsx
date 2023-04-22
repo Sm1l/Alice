@@ -22,7 +22,7 @@ const Header = ({ offsetY, scrollY }) => {
   //*animation header
   const heightSizes = [200, 70];
   const imageSizes = [100, 50];
-  const fontSizes = ["30px", "20px"];
+  const fontSizes = ["3rem", "2rem"];
 
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   const logoWidth = useTransform(scrollY, offsetY, imageSizes);

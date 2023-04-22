@@ -1,6 +1,6 @@
 @import "../../abstracts/variables.scss";
 
-.about {
+.hello {
   display: flex;
   width: 100%;
   gap: 50px;
@@ -29,12 +29,6 @@
     padding: 30px;
     border-radius: 30px;
   }
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  &__item {
-    list-style-type: disc;
+  &__text {
   }
 }

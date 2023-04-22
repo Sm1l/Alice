@@ -6,8 +6,8 @@ const ArrowDown = () => {
   return (
     <svg
       className="arrow__down"
-      width="74"
-      height="94"
+      width="7.4rem"
+      height="9.4rem"
       viewBox="0 0 74 94"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +31,8 @@ const ArrowRight = () => {
   return (
     <svg
       className="arrow__right"
-      width="74"
-      height="94"
+      width="7.4rem"
+      height="9.4rem"
       viewBox="0 0 74 94"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +56,8 @@ const ArrowLeft = () => {
   return (
     <svg
       className="arrow__left"
-      width="74"
-      height="94"
+      width="7.4rem"
+      height="9.4rem"
       viewBox="0 0 74 94"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

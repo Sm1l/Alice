@@ -4,16 +4,21 @@
   display: flex;
   width: 100%;
   gap: 50px;
+  justify-content: space-between;
+
   &__title-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 10px;
+    position: sticky;
+    top: 90px;
+    align-self: flex-start;
   }
   &__title {
     white-space: nowrap;
-    font-size: 50px;
+    font-size: 3rem;
   }
   &__info {
     display: flex;
@@ -24,17 +29,22 @@
     padding: 30px;
     border-radius: 30px;
   }
-  &__text {
+  // &__text {
+  //   & span {
+  //     color: var(--colors-link-hover);
+  //     font-weight: 500;
+  //   }
+  // }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__item {
+    list-style-type: disc;
     & span {
       color: var(--colors-link-hover);
       font-weight: 500;
     }
-  }
-  &__button {
-    width: 100px;
-    background-color: transparent;
-    // background-color: red;
-    // background-color: transparent;
-    // color: red;
   }
 }
