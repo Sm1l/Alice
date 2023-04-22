@@ -64,23 +64,42 @@
       transition: all 300ms ease-out;
     }
 
+    & .svg__l,
+    & .svg__a,
+    & .svg__s {
+      fill: var(--colors-text);
+    }
+
+    & .svg__border {
+      stroke: var(--colors-text);
+    }
+
+    & .svg__i {
+      stroke: var(--colors-link-hover);
+      transition: all 300ms ease-out;
+
+      &_dot {
+        fill: var(--colors-link-hover);
+      }
+    }
+
     &:hover .svg__l,
     &:hover .svg__a,
     &:hover .svg__s {
-      fill: $color-orange;
+      fill: var(--colors-link-hover);
       transition: all 300ms ease-out;
     }
     &:hover .svg__border {
-      stroke: $color-orange;
+      stroke: var(--colors-link-hover);
       transition: all 300ms ease-out;
     }
 
     &:hover .svg__i {
-      stroke: $color-black;
+      stroke: var(--colors-text);
       transition: all 300ms ease-out;
 
       &_dot {
-        fill: $color-black;
+        fill: var(--colors-text);
       }
     }
   }
@@ -122,14 +141,14 @@
 
 .theme-toggle {
   & * {
-    fill: $color-grey;
-    stroke: $color-grey;
+    fill: var(--colors-link);
+    stroke: var(--colors-link);
     width: 30px;
     height: 30px;
     transition: all 300ms ease-out;
     &:hover * {
-      fill: $color-orange;
-      stroke: $color-orange;
+      fill: var(--colors-link-hover);
+      stroke: var(--colors-link-hover);
       transition: all 300ms ease-out;
     }
   }

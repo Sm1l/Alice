@@ -1,13 +1,6 @@
 import React from "react";
 import { motion, useTransform } from "framer-motion";
 
-import Name from "../Name";
-import ContactsSocial from "../ContactsSocial/ContactsSocial";
-// import Contacts from "../Contacts";
-// import Experience from "../Experience";
-// import Name from "../Name";
-// import Photo from "../Photo";
-
 import "./actressmainblock.scss";
 
 const ActressMainBlock = ({ offsetY, scrollY }) => {
@@ -15,11 +8,7 @@ const ActressMainBlock = ({ offsetY, scrollY }) => {
 
   return (
     <motion.main className="actressmainblock" style={{ marginTop: marginTop }}>
-      <Name />
-      {/* <Photo /> */}
-      {/* <Contacts /> */}
-      {/* <Experience /> */}
-      <ContactsSocial />
+      <h2 className="actressmainblock__title title">Page under construction</h2>
     </motion.main>
   );
 };

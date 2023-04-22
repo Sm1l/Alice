@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import arrow from "./img/ArrowLeft.svg";
+import { ArrowLeft } from "../../base/Arrow/Arrow";
 
 import "./education.scss";
 
@@ -28,9 +28,7 @@ const Education = () => {
         <h3 className="education__title title">
           Моё <br /> образование
         </h3>
-        <button className="education__button">
-          <img src={arrow} alt="Стрелка" />
-        </button>
+        <ArrowLeft />
       </motion.div>
     </section>
   );

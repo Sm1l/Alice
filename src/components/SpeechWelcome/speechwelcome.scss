@@ -25,7 +25,7 @@
     grid-area: text;
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: flex-end;
     align-self: flex-end;
     justify-self: end;
@@ -41,5 +41,6 @@
 
     text-align: end;
     vertical-align: text-bottom;
+    justify-self: end;
   }
 }

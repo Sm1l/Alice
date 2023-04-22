@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import arrow from "./img/ArrowRoght.svg";
+import { ArrowRight } from "../../base/Arrow/Arrow";
 
 import "./about.scss";
 
@@ -9,9 +9,7 @@ const About = () => {
     <section className="about ">
       <motion.div className="about__title-container">
         <h3 className="about__title title">Обо мне</h3>
-        <button className="about__button">
-          <img src={arrow} alt="Стрелка" />
-        </button>
+        <ArrowRight />
       </motion.div>
       <motion.div className="about__info ui-block">
         <p className="about__text">

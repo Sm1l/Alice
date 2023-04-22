@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import arrow from "../About/img/ArrowRoght.svg";
+import { ArrowRight } from "../../base/Arrow/Arrow";
 
 import "./work.scss";
 
@@ -11,9 +11,7 @@ const Work = () => {
         <h3 className="work__title title">
           Моя <br /> работа
         </h3>
-        <button className="work__button">
-          <img src={arrow} alt="Стрелка" />
-        </button>
+        <ArrowRight />
       </motion.div>
       <motion.div className="work__info ui-block">
         <p className="work__text">
