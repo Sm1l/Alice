@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { animate, motion, useTransform } from "framer-motion";
-import { NavLink, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { motion, useTransform } from "framer-motion";
+import { NavLink } from "react-router-dom";
 import { toggleTheme } from "../../store/themeSlice";
 import { toggleMenuIndex } from "../../store/menuSlice";
 import { useDispatch, useSelector } from "react-redux";

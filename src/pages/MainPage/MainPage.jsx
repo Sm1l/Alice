@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../store/themeSlice";
 import { toggleMenuIndex } from "../../store/menuSlice";
 
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-
-import SocialWhatsApp from "../../components/Social/SocialWhatsApp";
-import SocialTelephone from "../../components/Social/SocialTelephone";
-import SocialInstagram from "../../components/Social/SocialInstagram";
-import SocialEmail from "../../components/Social/SocialEmail";
-import SocialVkontakte from "../../components/Social/SocialVkontakte";
-import SocialKinopoisk from "../../components/Social/SocialKinopoisk";
 
 import { Classic } from "@theme-toggles/react";
 
@@ -79,7 +72,6 @@ const MainPage = () => {
   const svgVariants = {
     visible: {
       opacity: 1,
-      // pathLength: 1,
       transition: {
         duration: 1,
         delayChildren: 2,
@@ -88,51 +80,39 @@ const MainPage = () => {
     },
     hidden: {
       opacity: 0,
-      // pathLength: 0,
     },
   };
 
   const svgChildVariants = {
     visible: {
       opacity: 1,
-      // pathLength: 1,
-      // offsetDistance: "100%",
       transition: { duration: 1 },
     },
     hidden: {
       opacity: 0,
-      // pathLength: 0,
-      // offsetDistance: "0%",
     },
   };
   const svgDotVariants = {
     visible: {
       opacity: 1,
-      pathLength: 1,
-      // offsetDistance: "100%",
       transition: { delay: 4, duration: 1 },
     },
     hidden: {
       opacity: 0,
-      pathLength: 0,
-      // offsetDistance: "0%",
     },
   };
   const borderVariants = {
     visible: {
       opacity: 1,
       pathLength: 1,
-      // offsetDistance: "100%",
       transition: { duration: 4, delay: 1 },
     },
     hidden: {
       opacity: 0,
       pathLength: 0,
-      // offsetDistance: "0%",
     },
   };
 
-  //*animation menu links
   //*animation menu
   const activeMenuIndex = useSelector((state) => state.menu.menuIndex);
   const toggleActiveMenuIndexTeacher = () => dispatch(toggleMenuIndex({ menuIndex: 0 }));
@@ -143,7 +123,6 @@ const MainPage = () => {
   }, [activeMenuIndex]);
 
   //*theme
-
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
     localStorage.setItem("LiasTheme", JSON.stringify(theme));
@@ -197,7 +176,7 @@ const MainPage = () => {
               x2="59.05"
               y2="32"
               stroke="#de8927"
-              stroke-width="3.1"
+              strokeWidth="3.1"
               variants={svgChildVariants}
             />
             <motion.path
@@ -220,7 +199,7 @@ const MainPage = () => {
               width="78"
               height="78"
               stroke="black"
-              stroke-width="2"
+              strokeWidth="2"
               variants={borderVariants}
             />
             <motion.rect

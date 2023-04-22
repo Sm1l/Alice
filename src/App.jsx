@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import MainPage from "./pages/MainPage/MainPage";
 import SpeechPage from "./pages/SpeechPage";
@@ -7,7 +7,6 @@ import ActressPage from "./pages/ActressPage/";
 import Layout from "./components/Layout";
 
 import { useScroll } from "framer-motion";
-// import Appcontainer from "./components/Appcontainer";
 
 import "./app.scss";
 

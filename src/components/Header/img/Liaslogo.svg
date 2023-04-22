@@ -4,6 +4,6 @@
 <path class="svg__a" d="M57.209 49.722H60.8L68.225 69H64.607L62.798 63.897H55.103L53.294 69H49.811L57.209 49.722ZM56.021 61.332H61.907L59.018 53.043H58.937L56.021 61.332Z" fill="black"/>
 <rect class="svg__i_dot" x="54.4" y="13" width="3" height="3" fill="#black"/>
 <rect class="svg__i_dot" x="60.6" y="13" width="3" height="3" fill="#black"/>
-<line class="svg__i" x1="59.05" y1="18" x2="59.05" y2="32" stroke="#black" stroke-width="3.1" />
-<rect class="svg__border" x="1" y="1" width="78" height="78" stroke="black" stroke-width="2"/>
+<line class="svg__i" x1="59.05" y1="18" x2="59.05" y2="32" stroke="#black" strokeWidth="3.1" />
+<rect class="svg__border" x="1" y="1" width="78" height="78" stroke="black" strokeWidth="2"/>
 </svg>
