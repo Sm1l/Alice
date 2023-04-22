@@ -16,6 +16,7 @@
     justify-content: flex-end;
     gap: 20px;
     padding: 20px 100px;
+    color: transparent;
     //  background-color: var(--colors-bg);
     // background-color: transparent;
     // background-image: none;
@@ -44,18 +45,11 @@
     justify-content: space-between;
     gap: 30px;
     padding: 20px 100px;
-    //  background-color: var(--colors-bg);
     background-color: transparent;
     background-image: none;
   }
 
-  //   &__logocontainer {
-  //     width: 300px;
-  //     height: 300px;
-  //     margin-bottom: 20px;
-  //   }
-
-  //todo-----------------start---------------------
+  //*logo
   &__logo {
     width: 240px;
     height: 240px;
@@ -83,26 +77,6 @@
         fill: var(--colors-link-hover);
       }
     }
-
-    // &:hover .svg__l,
-    // &:hover .svg__a,
-    // &:hover .svg__s {
-    //   fill: var(--colors-link-hover);
-    //   transition: all 300ms ease-out;
-    // }
-    // &:hover .svg__border {
-    //   stroke: var(--colors-link-hover);
-    //   transition: all 300ms ease-out;
-    // }
-
-    // &:hover .svg__i {
-    //   stroke: var(--colors-text);
-    //   transition: all 300ms ease-out;
-
-    //   &_dot {
-    //     fill: var(--colors-text);
-    //   }
-    // }
   }
   //todo-----------------end---------------------
 

@@ -1,9 +1,10 @@
 import React from "react";
 
 import "./speechwelcome.scss";
-
-import image from "./img/IMG_0209 1.avif";
 import { ArrowDown } from "../../base/Arrow/Arrow";
+
+import image from "./img/IMG_0209 1.webp";
+
 const SpeechWelcome = () => {
   return (
     <div className="speechwelcome">
