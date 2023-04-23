@@ -20,7 +20,7 @@ import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
   //*animation header
-  const heightSizes = ["20rem", "7rem"];
+  const heightSizes = ["20rem", "8rem"];
   const imageSizes = ["10rem", "5rem"];
   const fontSizes = ["3rem", "2rem"];
 
