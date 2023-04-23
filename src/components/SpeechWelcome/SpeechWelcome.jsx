@@ -1,16 +1,20 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import "./speechwelcome.scss";
 import { ArrowDown } from "../../base/Arrow/Arrow";
 
-import image from "./img/IMG_0209 1.webp";
+import image from "./img/Alice.webp";
+import imageSepia from "./img/Alice_sepia.webp";
 
 const SpeechWelcome = () => {
+  const theme = useSelector((state) => state.theme.theme);
+
   return (
     <div className="speechwelcome">
       <h1 className="speechwelcome__title title">Ораторское искусство и сценическое движение</h1>
       <div className="speechwelcome__image _ibg">
-        <img src={image} alt="Фотография Соловьевой Алисы" />
+        <img src={theme === "light" ? `${image}` : `${imageSepia}`} alt="Фотография Соловьевой Алисы" />
       </div>
       <div className="speechwelcome__text-container">
         <div className="speechwelcome__arrow">
