@@ -20,8 +20,8 @@ import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
   //*animation header
-  const heightSizes = [180, 70];
-  const imageSizes = [100, 50];
+  const heightSizes = ["22rem", "8rem"];
+  const imageSizes = ["10rem", "5rem"];
   const fontSizes = ["3rem", "2rem"];
 
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
