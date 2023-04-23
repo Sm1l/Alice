@@ -72,7 +72,7 @@ const Header = ({ offsetY, scrollY }) => {
         <div className="header__logocontainer">
           <NavLink to="/">
             <motion.div style={{ width: logoWidth, height: logoWidth }}>
-              <Logo className="header__logo" width={logoWidth} height={logoWidth} />
+              <Logo className="header__logo" />
             </motion.div>
           </NavLink>
           <motion.h2 className="header__name" style={{ fontSize }}>
