@@ -6,7 +6,7 @@ import "./hello.scss";
 
 const Hello = () => {
   return (
-    <section className="about ">
+    <section className="hello">
       <motion.div className="hello__title-container">
         <h3 className="hello__title title">Привет</h3>
         <ArrowRight />

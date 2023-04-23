@@ -38,3 +38,30 @@
     list-style-type: disc;
   }
 }
+
+@media (max-width: 960px) {
+  .about {
+    gap: 15px;
+
+    &__title-container {
+      gap: 5px;
+    }
+
+    &__info {
+      padding: 10px 10px 10px 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__title-container {
+      align-items: center;
+      gap: 5px;
+    }
+    &__title {
+      writing-mode: vertical-lr;
+      transform: scale(-1, -1);
+    }
+  }
+}

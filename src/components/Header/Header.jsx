@@ -20,7 +20,7 @@ import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
   //*animation header
-  const heightSizes = [200, 70];
+  const heightSizes = [180, 70];
   const imageSizes = [100, 50];
   const fontSizes = ["3rem", "2rem"];
 
@@ -131,9 +131,9 @@ const Header = ({ offsetY, scrollY }) => {
               </li>
             </ul>
           </div>
-          <div className="header__toggle">
+          <motion.div className="header__toggle">
             <Classic duration={750} onToggle={changeTheme} />
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </motion.header>

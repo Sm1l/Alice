@@ -1,10 +1,14 @@
 //
 
 .mainpage {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 
   &__header {
     position: absolute;
@@ -81,6 +85,7 @@
   //todo-----------------end---------------------
 
   &__title {
+    text-align: center;
     font-size: 4rem;
   }
 
@@ -115,5 +120,49 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .mainpage {
+    &__main {
+      padding: 20px;
+    }
+    &__title {
+      // font-size: 3rem;
+    }
+    &__p {
+      // font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainpage {
+    &__logo {
+      width: 180px;
+      height: 180px;
+    }
+
+    &__linkcontainer {
+      gap: 10px;
+    }
+
+    &__main {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .mainpage {
+    &__logo {
+      width: 160px;
+      height: 160px;
+    }
+
+    &__main {
+      padding: 10px;
+    }
   }
 }

@@ -4,12 +4,12 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
-  padding: 30px 50px;
+  padding: 2rem 3rem;
 
   &__top {
     width: 100%;
     display: flex;
-    // flex-direction: column;
+    gap: 30px;
     align-items: flex-start;
     justify-content: space-between;
   }
@@ -18,5 +18,28 @@
   }
   &__copy {
     font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer {
+  }
+}
+
+@media (max-width: 960px) {
+  .footer {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .speechwelcome {
   display: grid;
   width: 100%;
-  gap: 30px;
+  gap: 2rem;
   grid-template-rows: auto minmax(300px, auto) auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -9,10 +9,12 @@
     "image image ."
     "text name name";
   align-items: center;
+
   &__title {
     grid-area: title;
     font-size: 6rem;
   }
+
   &__image {
     grid-area: image;
     padding: 0px 0px 50% 0;
@@ -42,5 +44,52 @@
     text-align: end;
     vertical-align: text-bottom;
     justify-self: end;
+  }
+}
+@media (max-width: 960px) {
+  .speechwelcome {
+    grid-template-areas:
+      "title title title"
+      "image image image"
+      "text name name";
+  }
+}
+
+@media (max-width: 768px) {
+  .speechwelcome {
+    grid-template-rows: auto minmax(300px, auto) auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "title title title"
+      "image image image"
+      "name name name"
+      "text text .";
+  }
+}
+
+@media (max-width: 640px) {
+  .speechwelcome {
+    &__image {
+      padding: 0px 0px 65% 0;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .speechwelcome {
+    &__image {
+      padding: 0px 0px 80% 0;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .speechwelcome {
+    &__title {
+      font-size: 5rem;
+    }
+    &__name {
+      font-size: 7rem;
+    }
   }
 }

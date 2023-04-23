@@ -32,3 +32,30 @@
   &__text {
   }
 }
+
+@media (max-width: 960px) {
+  .work {
+    gap: 15px;
+
+    &__title-container {
+      gap: 5px;
+    }
+
+    &__info {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    &__title-container {
+      align-items: center;
+      gap: 5px;
+    }
+    &__title {
+      writing-mode: vertical-lr;
+      transform: scale(-1, -1);
+    }
+  }
+}

@@ -8,9 +8,7 @@ const Education = () => {
   return (
     <section className="education ">
       <motion.div className="education__title-container">
-        <h3 className="education__title title">
-          Моё <br /> образование
-        </h3>
+        <h3 className="education__title title">Моё образование</h3>
         <ArrowRight />
       </motion.div>
       <motion.div className="education__info ui-block">

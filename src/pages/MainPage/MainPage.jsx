@@ -139,7 +139,7 @@ const MainPage = () => {
   return (
     <div className="mainpage">
       {/*//! пока убрал header,footer   */}
-      <header className="mainpage__header">
+      {/* <header className="mainpage__header">
         <motion.div
           className="mainpage__toggle"
           initial={{ x: -1000, opacity: 0 }}
@@ -148,7 +148,7 @@ const MainPage = () => {
         >
           <Classic duration={750} onToggle={changeTheme} />
         </motion.div>
-      </header>
+      </header> */}
       <motion.main className="mainpage__main" variants={containerVariants} initial="hidden" animate="visible">
         <motion.div className="mainpage__logocontainer">
           <motion.svg
