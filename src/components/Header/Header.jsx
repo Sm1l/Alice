@@ -27,7 +27,7 @@ const Header = ({ offsetY, scrollY }) => {
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   const logoWidth = useTransform(scrollY, offsetY, imageSizes);
   const fontSize = useTransform(scrollY, offsetY, fontSizes);
-  const opacity = useTransform(scrollY, [20, 100], [1, 0]);
+  const opacity = useTransform(scrollY, [10, 40], [1, 0]);
 
   //*animation menu
   // const [activeMenuIndex, setActiveMenuIndex] = useState(0);
@@ -92,7 +92,8 @@ const Header = ({ offsetY, scrollY }) => {
             // }}
             // transition={{ duration: 1 }}
           >
-            <motion.p style={{ fontSize }}>Ораторское искусство</motion.p>
+            {/* <motion.p style={{ fontSize }}>Ораторское искусство</motion.p> */}
+            <p>Ораторское искусство</p>
             {activeMenuIndex === 0 && <ActiveLine />}
           </NavLink>
           <NavLink
@@ -108,7 +109,8 @@ const Header = ({ offsetY, scrollY }) => {
             // }}
             // transition={{ duration: 1 }}
           >
-            <motion.p style={{ fontSize }}>Театр и кино</motion.p>
+            {/* <motion.p style={{ fontSize }}>Театр и кино</motion.p> */}
+            <p>Театр и кино</p>
             {activeMenuIndex === 1 && <ActiveLine />}
           </NavLink>
         </nav>
