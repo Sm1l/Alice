@@ -12,7 +12,8 @@ import "./app.scss";
 
 const App = () => {
   const { scrollY } = useScroll();
-  const offsetY = [0, 500];
+  const offsetY = [0, 300];
+  // const offsetY = ["0rem", "25rem"];
 
   return (
     <div className="app">
