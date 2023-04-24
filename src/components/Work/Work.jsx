@@ -18,6 +18,16 @@ const Work = () => {
         <p className="work__text"> Здесь будут видосики</p>
         <p className="work__text"> Здесь будут видосики</p>
         <p className="work__text"> Здесь будут видосики</p>
+        <p className="work__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur beatae dolores molestiae sapiente
+          porro eos sed illo? Nulla, delectus beatae molestiae eaque corporis culpa? Libero modi eos perspiciatis
+          expedita.
+        </p>
+        <p className="work__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur beatae dolores molestiae sapiente
+          porro eos sed illo? Nulla, delectus beatae molestiae eaque corporis culpa? Libero modi eos perspiciatis
+          expedita.
+        </p>
       </motion.div>
       <motion.div className="work__title-container" variants={textAnimation} custom={1}>
         <h3 className="work__title title">
