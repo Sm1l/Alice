@@ -26,7 +26,7 @@ const Header = ({ offsetY, scrollY }) => {
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   // const logoWidth = useTransform(scrollY, offsetY, imageSizes);
   // const fontSize = useTransform(scrollY, offsetY, fontSizes);
-  const opacity = useTransform(scrollY, [0, 100], [1, 0]);
+  const opacity = useTransform(scrollY, [0, 70], [1, 0]);
 
   //*animation menu
   const dispatch = useDispatch();
