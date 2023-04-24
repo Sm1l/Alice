@@ -207,3 +207,12 @@
     }
   }
 }
+@media (max-width: 415px) {
+  .header {
+    &__link {
+      & p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

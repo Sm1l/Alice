@@ -10,8 +10,6 @@ body[data-theme="light"] {
   --shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
 }
 body[data-theme="light"] header,
-// body[data-theme="light"] main,
-// body[data-theme="light"] footer,
 body[data-theme="light"] .app,
 body[data-theme="light"] .ui-block {
   background-color: var(--colors-ui-base);
@@ -31,8 +29,6 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="dark"] header,
-// body[data-theme="dark"] main,
-// body[data-theme="dark"] footer,
 body[data-theme="dark"] .app,
 body[data-theme="dark"] .ui-block {
   background-color: var(--colors-ui-base);
