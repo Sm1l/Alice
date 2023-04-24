@@ -74,13 +74,13 @@ const Header = ({ offsetY, scrollY }) => {
         <nav className="header__link-container">
           <NavLink
             // className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
-            className={"header__link"}
+            className="header__link"
             to="/speech"
             onClick={toggleActiveMenuIndexTeacher}
           >
             {/*//! убрал изменение размера шрифта*/}
             {/* <motion.p style={{ fontSize }}>Ораторское искусство</motion.p> */}
-            <p>Ораторское искусство</p>
+            <p className="header__link-p">Ораторское искусство</p>
             {activeMenuIndex === 0 && <ActiveLine />}
           </NavLink>
           <NavLink
@@ -90,7 +90,7 @@ const Header = ({ offsetY, scrollY }) => {
             onClick={toggleActiveMenuIndexActress}
           >
             {/* <motion.p style={{ fontSize }}>Театр и кино</motion.p> */}
-            <p>Театр и кино</p>
+            <p className="header__link-p">Театр и кино</p>
             {activeMenuIndex === 1 && <ActiveLine />}
           </NavLink>
         </nav>
