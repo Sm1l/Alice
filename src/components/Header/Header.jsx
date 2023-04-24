@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, useTransform } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { toggleTheme } from "../../store/themeSlice";
@@ -57,7 +57,9 @@ const Header = ({ offsetY, scrollY }) => {
   }
   // };
   //*theme
+
   const theme = useSelector((store) => store.theme.theme);
+  const [isToggled, setToggle] = useState(theme === "light" ? false : true);
   const changeTheme = () => {
     dispatch(toggleTheme());
   };
@@ -92,6 +94,7 @@ const Header = ({ offsetY, scrollY }) => {
             // }}
             // transition={{ duration: 1 }}
           >
+            {/*//! убрал изменение размера шрифта*/}
             {/* <motion.p style={{ fontSize }}>Ораторское искусство</motion.p> */}
             <p>Ораторское искусство</p>
             {activeMenuIndex === 0 && <ActiveLine />}
@@ -134,7 +137,7 @@ const Header = ({ offsetY, scrollY }) => {
             </ul>
           </div>
           <motion.div className="header__toggle">
-            <Classic duration={750} onToggle={changeTheme} />
+            <Classic toggled={isToggled} toggle={setToggle} duration={750} onToggle={changeTheme} />
           </motion.div>
         </div>
       </motion.div>

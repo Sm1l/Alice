@@ -72,6 +72,12 @@
     &__image {
       padding: 0px 0px 65% 0;
     }
+    &__title {
+      font-size: 5rem;
+    }
+    &__name {
+      font-size: 7rem;
+    }
   }
 }
 
@@ -80,16 +86,22 @@
     &__image {
       padding: 0px 0px 80% 0;
     }
+    &__title {
+      font-size: 4rem;
+    }
+    &__name {
+      font-size: 6rem;
+    }
   }
 }
 
 @media (max-width: 370px) {
   .speechwelcome {
     &__title {
-      font-size: 5rem;
+      font-size: 3rem;
     }
     &__name {
-      font-size: 7rem;
+      font-size: 5rem;
     }
   }
 }

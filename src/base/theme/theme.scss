@@ -8,13 +8,12 @@ body[data-theme="light"] {
   --colors-link-hover: #5da9cf;
 
   --shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
-
-  // --background-image: "./img/background-beige.avif";
 }
 body[data-theme="light"] header,
 body[data-theme="light"] main,
 body[data-theme="light"] footer,
 body[data-theme="light"] .ui-block {
+  background-color: var(--colors-ui-base);
   background-image: linear-gradient(90deg, #b6c3ca, #ffffff);
 }
 
@@ -28,23 +27,25 @@ body[data-theme="dark"] {
   --colors-link-hover: #e57d07;
 
   --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
-
-  // --background-image: "./img/background-beige.avif";
 }
 
 body[data-theme="dark"] header,
 body[data-theme="dark"] main,
 body[data-theme="dark"] footer,
 body[data-theme="dark"] .ui-block {
+  background-color: var(--colors-ui-base);
   background-image: linear-gradient(90deg, #121212, #333333, #525252);
 }
 
+//*all
 body {
-  color: --colors-text;
-  background-color: --colors-bg;
+  color: var(--colors-text);
+  background-color: var(--colors-bg);
+  transition: color 500ms ease-out, background-color 500ms ease-out;
 }
 
 .ui-block {
   background-color: var(--colors-ui-base);
   box-shadow: var(--shadow);
+  transition: color 500ms ease-out, background-color 500ms ease-out;
 }

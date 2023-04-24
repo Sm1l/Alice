@@ -12,10 +12,10 @@ import "./mainpage.scss";
 
 const MainPage = () => {
   const dispatch = useDispatch();
-  const theme = useSelector((store) => store.theme.theme);
-  const changeTheme = () => {
-    dispatch(toggleTheme());
-  };
+  // const theme = useSelector((store) => store.theme.theme);
+  // const changeTheme = () => {
+  //   dispatch(toggleTheme());
+  // };
 
   //*animation
 
@@ -121,20 +121,6 @@ const MainPage = () => {
   useEffect(() => {
     localStorage.setItem("LiasMenuIndex", JSON.stringify(activeMenuIndex));
   }, [activeMenuIndex]);
-
-  //*theme
-  useEffect(() => {
-    document.body.setAttribute("data-theme", theme);
-    localStorage.setItem("LiasTheme", JSON.stringify(theme));
-  }, [theme]);
-
-  //!надо разобраться, что-то в этом есть!
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     document.querySelector(".theme-toggle").classList.add("theme-toggle--toggled");
-  //     console.log("dark");
-  //   }
-  // }, []);
 
   return (
     <div className="mainpage">
