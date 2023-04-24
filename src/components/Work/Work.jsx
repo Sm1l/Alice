@@ -5,15 +5,13 @@ import { ArrowLeft } from "../../base/Arrow/Arrow";
 import "./work.scss";
 
 const Work = () => {
+  const textAnimation = {
+    hidden: { x: 100, opacity: 0 },
+    visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
+  };
   return (
-    <section className="work ">
-      {/* <motion.div className="work__title-container">
-        <h3 className="work__title title">
-          Моя <br /> работа
-        </h3>
-        <ArrowRight />
-      </motion.div> */}
-      <motion.div className="work__info ui-block">
+    <motion.section className="work " initial="hidden" whileInView="visible" viewport={{ amount: 0.3, once: true }}>
+      <motion.div className="work__info ui-block" variants={textAnimation} custom={2}>
         <p className="work__text">Здесь будут видосики</p>
         <p className="work__text">Здесь будут видосики</p>
         <p className="work__text"> Здесь будут видосики</p>
@@ -21,13 +19,13 @@ const Work = () => {
         <p className="work__text"> Здесь будут видосики</p>
         <p className="work__text"> Здесь будут видосики</p>
       </motion.div>
-      <motion.div className="work__title-container">
+      <motion.div className="work__title-container" variants={textAnimation} custom={1}>
         <h3 className="work__title title">
           Мои <br /> работы
         </h3>
         <ArrowLeft />
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

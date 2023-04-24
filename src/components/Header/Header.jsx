@@ -19,14 +19,14 @@ import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
   //*animation header
-  const heightSizes = ["14rem", "8rem"];
+  const heightSizes = [140, 100];
   // const imageSizes = ["10rem", "5rem"];
   // const fontSizes = ["3rem", "2rem"];
 
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   // const logoWidth = useTransform(scrollY, offsetY, imageSizes);
   // const fontSize = useTransform(scrollY, offsetY, fontSizes);
-  const opacity = useTransform(scrollY, [10, 100], [1, 0]);
+  const opacity = useTransform(scrollY, [0, 80], [1, 0]);
 
   //*animation menu
   const dispatch = useDispatch();
@@ -66,7 +66,7 @@ const Header = ({ offsetY, scrollY }) => {
     <motion.header className="header" style={{ height: headerHeight }}>
       <div className="header__top">
         <div className="header__logocontainer">
-          <NavLink to="/" style={{ width: "6rem", height: "6rem" }}>
+          <NavLink className="header__navlink-logo" to="/">
             <Logo className="header__logo" />
           </NavLink>
           <h2 className="header__name">Соловьёва Алиса</h2>

@@ -5,13 +5,17 @@ import { ArrowRight } from "../../base/Arrow/Arrow";
 import "./hello.scss";
 
 const Hello = () => {
+  const textAnimation = {
+    hidden: { x: -100, opacity: 0 },
+    visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
+  };
   return (
-    <section className="hello ">
-      <motion.div className="hello__title-container">
+    <motion.section className="hello" initial="hidden" whileInView="visible" viewport={{ amount: 0.3, once: true }}>
+      <motion.div className="hello__title-container" variants={textAnimation} custom={1}>
         <h3 className="hello__title title">Привет</h3>
         <ArrowRight />
       </motion.div>
-      <motion.div className="hello__info ui-block">
+      <motion.div className="hello__info ui-block" variants={textAnimation} custom={2}>
         <p className="hello__text">
           Привет! <br />
           Меня зовут Соловьёва Алиса и я являюсь преподавателем по технике речи, ораторскому мастерству и пластике.
@@ -28,7 +32,7 @@ const Hello = () => {
         </p>
         <p className="hello__text">До скорой встречи!</p>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

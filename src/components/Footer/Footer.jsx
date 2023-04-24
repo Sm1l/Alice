@@ -1,23 +1,26 @@
 import React from "react";
-import Contacts from "../ContactsSocial/ContactsSocial";
+import { motion } from "framer-motion";
 
 import "./footer.scss";
 import ContactsAdress from "../ContactsAdress/ContactsAdress";
 import ContactsSocial from "../ContactsSocial/ContactsSocial";
 
 const Footer = () => {
+  const textAnimation = {
+    hidden: { y: 100, opacity: 0 },
+    visible: (custom) => ({ y: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
+  };
+
   return (
-    <footer className="footer">
-      <div className="footer__top">
-        {/* <div className="footer__contacts"></div>
-        <div className="footer__social"></div> */}
+    <motion.footer className="footer" initial="hidden" whileInView="visible" viewport={{ amount: 0.3, once: true }}>
+      <motion.div className="footer__top" variants={textAnimation} custom={1}>
         <ContactsAdress />
         <ContactsSocial />
-      </div>
-      <div className="footer__bottom">
+      </motion.div>
+      <motion.div className="footer__bottom" variants={textAnimation} custom={2}>
         <p className="footer__copy">Copyright 2023 © Копирование информации запрещено законом</p>
-      </div>
-    </footer>
+      </motion.div>
+    </motion.footer>
   );
 };
 

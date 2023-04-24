@@ -5,13 +5,22 @@ import { ArrowRight } from "../../base/Arrow/Arrow";
 import "./education.scss";
 
 const Education = () => {
+  const textAnimation = {
+    hidden: { x: -100, opacity: 0 },
+    visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
+  };
   return (
-    <section className="education ">
-      <motion.div className="education__title-container">
+    <motion.section
+      className="education "
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.3, once: true }}
+    >
+      <motion.div className="education__title-container" variants={textAnimation} custom={1}>
         <h3 className="education__title title">Моё образование</h3>
         <ArrowRight />
       </motion.div>
-      <motion.div className="education__info ui-block">
+      <motion.div className="education__info ui-block" variants={textAnimation} custom={2}>
         <ul className="education__list">
           <li className="education__item">
             В 2013 г. – окончила <span>с отличием</span> факультет Музыкального искусства Эстрады СПБГУКИ курс доцента
@@ -30,13 +39,7 @@ const Education = () => {
           </li>
         </ul>
       </motion.div>
-      {/* <motion.div className="education__title-container">
-        <h3 className="education__title title">
-          Моё <br /> образование
-        </h3>
-        <ArrowLeft />
-      </motion.div> */}
-    </section>
+    </motion.section>
   );
 };
 

@@ -13,7 +13,7 @@ import "./app.scss";
 
 const App = () => {
   const { scrollY } = useScroll();
-  const offsetY = [0, 100];
+  const offsetY = [0, 150];
   // const offsetY = ["0rem", "25rem"];
 
   //*theme

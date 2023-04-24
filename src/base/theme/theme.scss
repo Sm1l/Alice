@@ -9,9 +9,10 @@ body[data-theme="light"] {
 
   --shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
 }
-body[data-theme="light"] header,
-body[data-theme="light"] main,
-body[data-theme="light"] footer,
+// body[data-theme="light"] header,
+// body[data-theme="light"] main,
+// body[data-theme="light"] footer,
+body[data-theme="light"] .app,
 body[data-theme="light"] .ui-block {
   background-color: var(--colors-ui-base);
   background-image: linear-gradient(90deg, #b6c3ca, #ffffff);
@@ -29,9 +30,10 @@ body[data-theme="dark"] {
   --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
 }
 
-body[data-theme="dark"] header,
-body[data-theme="dark"] main,
-body[data-theme="dark"] footer,
+// body[data-theme="dark"] header,
+// body[data-theme="dark"] main,
+// body[data-theme="dark"] footer,
+body[data-theme="dark"] .app,
 body[data-theme="dark"] .ui-block {
   background-color: var(--colors-ui-base);
   background-image: linear-gradient(90deg, #121212, #333333, #525252);
