@@ -19,14 +19,14 @@ import "./header.scss";
 
 const Header = ({ offsetY, scrollY }) => {
   //*animation header
-  const heightSizes = ["15rem", "8rem"];
+  const heightSizes = ["14rem", "8rem"];
   // const imageSizes = ["10rem", "5rem"];
   // const fontSizes = ["3rem", "2rem"];
 
   const headerHeight = useTransform(scrollY, offsetY, heightSizes);
   // const logoWidth = useTransform(scrollY, offsetY, imageSizes);
   // const fontSize = useTransform(scrollY, offsetY, fontSizes);
-  const opacity = useTransform(scrollY, [20, 150], [1, 0]);
+  const opacity = useTransform(scrollY, [10, 100], [1, 0]);
 
   //*animation menu
   const dispatch = useDispatch();
