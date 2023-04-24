@@ -40,7 +40,6 @@
     grid-area: name;
     font-size: 8.8rem;
     line-height: 10%;
-
     text-align: end;
     vertical-align: text-bottom;
     justify-self: end;
@@ -52,8 +51,11 @@
       "title title title"
       "image image image"
       "text name name";
+    &__title {
+      font-size: 5.5rem;
+    }
     &__name {
-      font-size: 7.5rem;
+      font-size: 7rem;
     }
   }
 }
@@ -76,10 +78,10 @@
       padding: 0px 0px 65% 0;
     }
     &__title {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
     &__name {
-      font-size: 6rem;
+      font-size: 5.5rem;
     }
   }
 }

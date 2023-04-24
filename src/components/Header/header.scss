@@ -191,7 +191,7 @@
 @media (max-width: 768px) {
   .header {
     &__name {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
   }
 }
@@ -199,17 +199,17 @@
   .header {
     &__link {
       &-p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
     }
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
   .header {
     &__link {
       &-p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
     }
   }
