@@ -1,21 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import { toggleTheme } from "../../store/themeSlice";
 import { toggleMenuIndex } from "../../store/menuSlice";
-
-import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 
 import { Classic } from "@theme-toggles/react";
 
 import "./mainpage.scss";
 
+//*theme
+
 const MainPage = () => {
+  const theme = useSelector((store) => store.theme.theme);
   const dispatch = useDispatch();
-  // const theme = useSelector((store) => store.theme.theme);
-  // const changeTheme = () => {
-  //   dispatch(toggleTheme());
-  // };
+  const [isToggled, setToggle] = useState(theme === "light" ? false : true);
+  const changeTheme = () => {
+    dispatch(toggleTheme());
+  };
 
   //*animation
 
@@ -124,18 +127,15 @@ const MainPage = () => {
 
   return (
     <div className="mainpage">
-      {/*//! пока убрал header,footer   */}
-      {/* <header className="mainpage__header">
+      <motion.main className="mainpage__main" variants={containerVariants} initial="hidden" animate="visible">
         <motion.div
           className="mainpage__toggle"
           initial={{ x: -1000, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 2 }}
         >
-          <Classic duration={750} onToggle={changeTheme} />
+          <Classic toggled={isToggled} toggle={setToggle} duration={750} onToggle={changeTheme} />
         </motion.div>
-      </header> */}
-      <motion.main className="mainpage__main" variants={containerVariants} initial="hidden" animate="visible">
         <motion.div className="mainpage__logocontainer">
           <motion.svg
             className="mainpage__logo"
