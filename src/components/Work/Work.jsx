@@ -6,7 +6,7 @@ import "./work.scss";
 
 const Work = () => {
   const textAnimation = {
-    hidden: { x: 100, opacity: 0 },
+    hidden: { x: -100, opacity: 0 },
     visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
   };
   return (
@@ -30,9 +30,7 @@ const Work = () => {
         </p>
       </motion.div>
       <motion.div className="work__title-container" variants={textAnimation} custom={1}>
-        <h3 className="work__title title">
-          Мои <br /> работы
-        </h3>
+        <h3 className="work__title title">Мои работы</h3>
         <ArrowLeft />
       </motion.div>
     </motion.section>

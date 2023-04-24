@@ -16,8 +16,8 @@ const Hello = () => {
         <ArrowRight />
       </motion.div>
       <motion.div className="hello__info ui-block" variants={textAnimation} custom={2}>
+        <p className="hello__text">Привет! </p>
         <p className="hello__text">
-          Привет! <br />
           Меня зовут Соловьёва Алиса и я являюсь преподавателем по технике речи, ораторскому мастерству и пластике.
         </p>
         <p className="hello__text">
