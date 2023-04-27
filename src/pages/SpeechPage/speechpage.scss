@@ -1,8 +1,10 @@
 .speechpage {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 10rem 3rem;
   position: relative;
-
-  //   display: grid;
-  //   grid-template-rows: (1fr, 1fr);
-  //   grid-template-columns: (100px, auto, 100px, 1fr, 30px, 1fr, 100px);
-  //   grid-template-areas: ;
 }

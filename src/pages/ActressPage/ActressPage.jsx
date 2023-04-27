@@ -1,10 +1,16 @@
 import React from "react";
-import ActressMainBlock from "../../components/ActressMainBlock/ActressMainBlock";
+import ActressWelcome from "../../components/ActressWelcome";
+import { motion, useTransform } from "framer-motion";
 
 import "./actresspage.scss";
 
 const ActressPage = ({ offsetY, scrollY }) => {
-  return <ActressMainBlock offsetY={offsetY} scrollY={scrollY} />;
+  const marginTop = useTransform(scrollY, offsetY, offsetY);
+  return (
+    <motion.main className="actresspage" style={{ marginTop: marginTop }}>
+      <ActressWelcome />
+    </motion.main>
+  );
 };
 
 export default ActressPage;
