@@ -134,7 +134,13 @@ const MainPage = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 2 }}
         >
-          <Classic toggled={isToggled} toggle={setToggle} duration={750} onToggle={changeTheme} />
+          <Classic
+            className="mainpage__classic"
+            toggled={isToggled}
+            toggle={setToggle}
+            duration={750}
+            onToggle={changeTheme}
+          />
         </motion.div>
         <motion.div className="mainpage__logocontainer">
           <motion.svg
@@ -214,20 +220,24 @@ const MainPage = () => {
         <motion.nav className="mainpage__linkcontainer">
           <motion.div className="mainpage__item" variants={childVariantsLeft}>
             <NavLink
-              className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+              className={({ isActive }) =>
+                isActive ? "mainpage__p header__link header__link_active" : "mainpage__p header__link"
+              }
               to="/speech"
               onClick={toggleActiveMenuIndexTeacher}
             >
-              <motion.p className="mainpage__p">Ораторское искусство</motion.p>
+              Ораторское искусство
             </NavLink>
           </motion.div>
           <motion.div className="mainpage__item" variants={childVariantsRight}>
             <NavLink
-              className={({ isActive }) => (isActive ? "header__link header__link_active" : "header__link")}
+              className={({ isActive }) =>
+                isActive ? "mainpage__p header__link header__link_active" : "mainpage__p header__link"
+              }
               to="/actress"
               onClick={toggleActiveMenuIndexActress}
             >
-              <motion.p className="mainpage__p">Театр и кино</motion.p>
+              Театр и кино
             </NavLink>
           </motion.div>
         </motion.nav>

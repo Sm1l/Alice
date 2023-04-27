@@ -7,7 +7,7 @@ import "./social.scss";
 
 const SocialTelegram = () => {
   return (
-    <Link to="https://t.me/+79818005886" target="_blank" rel="noreferrer noopener">
+    <Link className="social__link" to="https://t.me/+79818005886" target="_blank" rel="noreferrer noopener">
       <BsTelegram className="social__img_m" />
     </Link>
   );

@@ -7,7 +7,7 @@ import "./social.scss";
 
 const SocialEmail = () => {
   return (
-    <Link to="mailto: Lisicas22@gmail.com">
+    <Link className="social__link" to="mailto: Lisicas22@gmail.com">
       <IoMailOutline className="social__img_m" />
     </Link>
   );

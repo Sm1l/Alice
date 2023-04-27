@@ -7,7 +7,7 @@ import "./social.scss";
 
 const SocialTelephone = () => {
   return (
-    <Link to="tel:+79818005886">
+    <Link className="social__link" to="tel:+79818005886">
       <BsTelephone className="social__img_m" />
     </Link>
   );

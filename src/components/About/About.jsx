@@ -7,7 +7,7 @@ import "./about.scss";
 const About = () => {
   const textAnimation = {
     hidden: { x: -100, opacity: 0 },
-    visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
+    visible: (custom) => ({ x: 0, opacity: 1, transition: { duration: 0.8, delay: custom * 0.3 } }),
   };
   return (
     <motion.section className="about " initial="hidden" whileInView="visible" viewport={{ amount: 0.3, once: true }}>

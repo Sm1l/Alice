@@ -7,10 +7,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 2px;
 
   &__top {
     display: flex;
@@ -121,6 +122,10 @@
       gap: 20px;
     }
     &-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 2.5rem;
       height: 2.5rem;
       & svg {
@@ -138,22 +143,22 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 3rem;
-    height: 3rem;
+    // width: 2.8rem;
+    // height: 2.8rem;
 
-    & button {
-      width: 3rem;
-      height: 3rem;
-    }
+    // & button {
+    //   width: 3rem;
+    //   height: 3rem;
+    // }
 
-    & svg {
-      display: block;
-      position: absolute;
-      width: 3rem;
-      height: 3rem;
-      top: 0;
-      left: 0;
-    }
+    // & svg {
+    //   display: block;
+    //   position: absolute;
+    //   width: 3rem;
+    //   height: 3rem;
+    //   top: 0;
+    //   left: 0;
+    // }
   }
 
   &__link {
@@ -192,6 +197,11 @@
   .header {
     &__name {
       font-size: 1.9rem;
+    }
+    &__link {
+      &-p {
+        line-height: 100%;
+      }
     }
   }
 }

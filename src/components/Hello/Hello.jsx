@@ -7,7 +7,7 @@ import "./hello.scss";
 const Hello = () => {
   const textAnimation = {
     hidden: { x: -100, opacity: 0 },
-    visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.3 } }),
+    visible: (custom) => ({ x: 0, opacity: 1, transition: { duration: 0.8, delay: custom * 0.3 } }),
   };
   return (
     <motion.section className="hello" initial="hidden" whileInView="visible" viewport={{ amount: 0.3, once: true }}>
@@ -16,7 +16,6 @@ const Hello = () => {
         <ArrowRight />
       </motion.div>
       <motion.div className="hello__info ui-block" variants={textAnimation} custom={2}>
-        <p className="hello__text">Привет! </p>
         <p className="hello__text">
           Меня зовут Соловьёва Алиса и я являюсь преподавателем по технике речи, ораторскому мастерству и пластике.
         </p>

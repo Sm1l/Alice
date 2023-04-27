@@ -114,7 +114,13 @@ const Header = ({ offsetY, scrollY }) => {
             </ul>
           </div>
           <motion.div className="header__toggle">
-            <Classic toggled={isToggled} toggle={setToggle} duration={750} onToggle={changeTheme} />
+            <Classic
+              // className="header__classic"
+              toggled={isToggled}
+              toggle={setToggle}
+              duration={750}
+              onToggle={changeTheme}
+            />
           </motion.div>
         </div>
       </motion.div>

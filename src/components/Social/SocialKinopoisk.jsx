@@ -7,7 +7,7 @@ import "./social.scss";
 
 const SocialKinopoisk = () => {
   return (
-    <Link to="https://kinopoisk.ru/name/6439642" target="_blank" rel="noreferrer noopener">
+    <Link className="social__link" to="https://kinopoisk.ru/name/6439642" target="_blank" rel="noreferrer noopener">
       <SiKinopoisk className="social__img_m" />
     </Link>
   );

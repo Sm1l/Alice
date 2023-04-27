@@ -6,14 +6,14 @@ import "./speechwelcome.scss";
 import { ArrowDown } from "../../base/Arrow/Arrow";
 
 import image from "./img/Alice.webp";
-import imageSepia from "./img/Alice_sepia.webp";
+import imageSepia from "./img/Alice_dark.webp";
 
 const SpeechWelcome = () => {
   const theme = useSelector((state) => state.theme.theme);
 
   const textAnimation = {
     hidden: { x: -100, opacity: 0 },
-    visible: (custom) => ({ x: 0, opacity: 1, transition: { delay: custom * 0.2 } }),
+    visible: (custom) => ({ x: 0, opacity: 1, transition: { duration: 0.8, delay: custom * 0.2 } }),
   };
 
   return (

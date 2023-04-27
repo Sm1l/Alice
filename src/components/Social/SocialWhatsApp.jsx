@@ -7,7 +7,7 @@ import "./social.scss";
 
 const SocialWhatsApp = () => {
   return (
-    <Link to="https://wa.me/+79818005886" target="_blank" rel="noreferrer noopener">
+    <Link className="social__link" to="https://wa.me/+79818005886" target="_blank" rel="noreferrer noopener">
       <BsWhatsapp className="social__img_m" />
     </Link>
   );
