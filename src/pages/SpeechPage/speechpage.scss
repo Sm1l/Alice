@@ -8,3 +8,9 @@
   padding: 10rem 3rem;
   position: relative;
 }
+
+@media (max-width: 640px) {
+  .speechpage {
+    padding: 10rem 1rem;
+  }
+}

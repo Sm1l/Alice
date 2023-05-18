@@ -59,3 +59,11 @@
     }
   }
 }
+
+@media (max-width: 415px) {
+  .work {
+    &__title {
+      font-size: 2.2rem;
+    }
+  }
+}

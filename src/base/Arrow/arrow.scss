@@ -11,3 +11,25 @@
     transform: rotateZ(90deg);
   }
 }
+
+@media (max-width: 640px) {
+  .arrow {
+    &__down,
+    &__right,
+    &__left {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .arrow {
+    &__down,
+    &__right,
+    &__left {
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
+}

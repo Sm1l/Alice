@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 import "./arrow.scss";
 
-const ArrowDown = forwardRef(({}, ref) => {
+const ArrowDown = forwardRef((_, ref) => {
   return (
     <svg
       ref={ref}
@@ -28,7 +28,7 @@ const ArrowDown = forwardRef(({}, ref) => {
   );
 });
 
-const ArrowRight = forwardRef(({}, ref) => {
+const ArrowRight = forwardRef((_, ref) => {
   return (
     <svg
       ref={ref}
@@ -54,7 +54,7 @@ const ArrowRight = forwardRef(({}, ref) => {
   );
 });
 
-const ArrowLeft = forwardRef(({}, ref) => {
+const ArrowLeft = forwardRef((_, ref) => {
   return (
     <svg
       style={{ transform: "rotateZ(90deg)" }}
@@ -82,6 +82,3 @@ const ArrowLeft = forwardRef(({}, ref) => {
 });
 
 export { ArrowDown, ArrowRight, ArrowLeft };
-// export const MArrowDown = motion(ArrowDown);
-// export const MArrowRight = motion(ArrowRight);
-// export const MArrowLeft = motion(ArrowLeft);

@@ -205,6 +205,18 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .header {
+    &__top {
+      padding: 1rem 1rem;
+    }
+    &__bottom {
+      padding: 0rem 1rem;
+    }
+  }
+}
+
 @media (max-width: 415px) {
   .header {
     &__link {
