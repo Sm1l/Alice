@@ -8,3 +8,9 @@
   max-width: 1200px;
   width: 100%;
 }
+
+@media (max-width: 640px) {
+  .actresspage {
+    padding: 10rem 1rem;
+  }
+}

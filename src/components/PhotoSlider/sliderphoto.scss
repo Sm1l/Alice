@@ -1,0 +1,10 @@
+.sliderphoto {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    padding: 0px 0px 50% 0px;
+  }
+}

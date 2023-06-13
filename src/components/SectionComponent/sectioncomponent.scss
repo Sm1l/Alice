@@ -1,0 +1,83 @@
+@import "../../abstracts/variables.scss";
+
+.sectioncomponent {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  justify-content: space-between;
+  position: relative;
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+    position: sticky;
+    top: 90px;
+    align-self: flex-start;
+  }
+  &__title {
+    white-space: nowrap;
+    font-size: 3rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--colors-ui-base);
+    flex-direction: 1;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  &__text {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__item {
+    list-style-type: disc;
+  }
+}
+
+@media (max-width: 960px) {
+  .sectioncomponent {
+    gap: 15px;
+
+    &__title-container {
+      gap: 5px;
+    }
+
+    &__info {
+      padding: 20px 15px;
+    }
+    &__item {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sectioncomponent {
+    &__title-container {
+      align-items: center;
+      gap: 5px;
+    }
+    &__title {
+      writing-mode: vertical-lr;
+      transform: scale(-1, -1);
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .sectioncomponent {
+    &__title {
+      font-size: 2.2rem;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Hello from "../../components/Hello";
 import About from "../../components/About";
 import Education from "../../components/Education";
 import Work from "../../components/Work";
+import PhotoSlider from "../../components/PhotoSlider/PhotoSlider";
 
 import "./speechpage.scss";
 
@@ -19,6 +20,7 @@ const SpeechPage = ({ offsetY, scrollY }) => {
       <About />
       <Education />
       <Work />
+      <PhotoSlider />
     </motion.main>
   );
 };
