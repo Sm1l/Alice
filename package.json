@@ -1,7 +1,7 @@
 {
   "name": "alice",
   "version": "0.1.0",
-  "homepage": "https://Sm1l.github.io/Alice",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
