@@ -20,7 +20,7 @@ const SpeechPage = ({ offsetY, scrollY }) => {
       <About />
       <Education />
       <Work />
-      <PhotoSlider />
+      {/* <PhotoSlider /> */}
     </motion.main>
   );
 };
