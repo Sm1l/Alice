@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, useTransform } from "framer-motion";
 
 import SpeechWelcome from "../../components/SpeechWelcome";
@@ -12,6 +12,10 @@ import "./speechpage.scss";
 
 const SpeechPage = ({ offsetY, scrollY }) => {
   const marginTop = useTransform(scrollY, offsetY, offsetY);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
 
   return (
     <motion.main className="speechpage" style={{ marginTop: marginTop }}>
