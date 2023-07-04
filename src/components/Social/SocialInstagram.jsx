@@ -17,4 +17,4 @@ const SocialInstagram = () => {
   );
 };
 
-export default SocialInstagram;
+export { SocialInstagram };

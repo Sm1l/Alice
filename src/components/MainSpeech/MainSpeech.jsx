@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useTransform } from "framer-motion";
 
-import ContactsSocial from "../ContactsSocial/ContactsSocial";
+import { ContactsSocial } from "../ContactsSocial/ContactsSocial";
 import Experience from "../Experience";
 import Name from "../Name";
 import Photo from "../Photo";
@@ -23,4 +23,4 @@ const MainSpeech = ({ offsetY, scrollY }) => {
   );
 };
 
-export default MainSpeech;
+export { MainSpeech };

@@ -13,4 +13,4 @@ const SocialTelephone = () => {
   );
 };
 
-export default SocialTelephone;
+export { SocialTelephone };

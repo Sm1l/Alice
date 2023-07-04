@@ -2,14 +2,7 @@ import React from "react";
 
 import "./contactssocial.scss";
 
-import SocialInstagram from "../Social/SocialInstagram";
-import SocialVkontakte from "../Social/SocialVkontakte";
-import SocialTelegram from "../Social/SocialTelegram";
-import SocialWhatsApp from "../Social/SocialWhatsApp";
-import SocialKinopoisk from "../Social/SocialKinopoisk";
-// import ContactsAdress from "../ContactsAdress/ContactsAdress";
-// import SocialInstagram from "../Social/SocialInstagram";
-// import SocialVkontakte from
+import { SocialInstagram, SocialVkontakte, SocialTelegram, SocialWhatsApp, SocialKinopoisk } from "../Social";
 
 const ContactsSocial = () => {
   return (
@@ -36,4 +29,4 @@ const ContactsSocial = () => {
   );
 };
 
-export default ContactsSocial;
+export { ContactsSocial };

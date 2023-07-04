@@ -24,4 +24,4 @@ const ContactsAdress = () => {
   );
 };
 
-export default ContactsAdress;
+export { ContactsAdress };

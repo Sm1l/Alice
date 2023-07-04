@@ -13,4 +13,4 @@ const SocialTelegram = () => {
   );
 };
 
-export default SocialTelegram;
+export { SocialTelegram };

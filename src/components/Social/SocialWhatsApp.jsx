@@ -13,4 +13,4 @@ const SocialWhatsApp = () => {
   );
 };
 
-export default SocialWhatsApp;
+export { SocialWhatsApp };

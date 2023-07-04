@@ -26,4 +26,4 @@ const ActressWelcome = () => {
   );
 };
 
-export default ActressWelcome;
+export { ActressWelcome };

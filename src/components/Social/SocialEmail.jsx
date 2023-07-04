@@ -13,4 +13,4 @@ const SocialEmail = () => {
   );
 };
 
-export default SocialEmail;
+export { SocialEmail };

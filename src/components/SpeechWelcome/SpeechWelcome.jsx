@@ -42,4 +42,4 @@ const SpeechWelcome = () => {
   );
 };
 
-export default SpeechWelcome;
+export { SpeechWelcome };

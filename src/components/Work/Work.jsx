@@ -1,5 +1,5 @@
 import React from "react";
-import SectionComponent from "../SectionComponent";
+import { SectionComponent } from "../SectionComponent";
 
 const Work = () => {
   return (
@@ -24,4 +24,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export { Work };

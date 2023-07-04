@@ -1,6 +1,6 @@
 import React from "react";
 
-import SectionComponent from "../SectionComponent";
+import { SectionComponent } from "../SectionComponent";
 
 const Hello = () => {
   return (
@@ -23,4 +23,4 @@ const Hello = () => {
   );
 };
 
-export default Hello;
+export { Hello };

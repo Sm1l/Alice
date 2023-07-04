@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import "./footer.scss";
-import ContactsAdress from "../ContactsAdress/ContactsAdress";
-import ContactsSocial from "../ContactsSocial/ContactsSocial";
+import { ContactsAdress } from "../ContactsAdress/ContactsAdress";
+import { ContactsSocial } from "../ContactsSocial/ContactsSocial";
 
 const Footer = () => {
   const textAnimation = {
@@ -24,4 +24,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export { Footer };

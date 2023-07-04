@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import MainPage from "./pages/MainPage/MainPage";
-import SpeechPage from "./pages/SpeechPage";
-import ActressPage from "./pages/ActressPage/";
-import Layout from "./components/Layout";
+import { MainPage } from "./pages/MainPage/MainPage";
+import { SpeechPage } from "./pages/SpeechPage";
+import { ActressPage } from "./pages/ActressPage/";
+import { Layout } from "./components/Layout";
 
 import { useScroll } from "framer-motion";
 
@@ -45,4 +45,4 @@ const App = () => {
   );
 };
 
-export default App;
+export { App };

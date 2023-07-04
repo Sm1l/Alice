@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ActressWelcome from "../../components/ActressWelcome";
+import { ActressWelcome } from "../../components/ActressWelcome";
 import { motion, useTransform } from "framer-motion";
 
 import "./actresspage.scss";
@@ -18,4 +18,4 @@ const ActressPage = ({ offsetY, scrollY }) => {
   );
 };
 
-export default ActressPage;
+export { ActressPage };

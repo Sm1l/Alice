@@ -10,10 +10,7 @@ import { ReactComponent as Logo } from "./img/Liaslogo.svg";
 import { toggleTheme } from "../../store/themeSlice";
 import { toggleMenuIndex } from "../../store/menuSlice";
 
-import SocialWhatsApp from "../Social/SocialWhatsApp";
-import SocialTelephone from "../Social/SocialTelephone";
-import SocialInstagram from "../Social/SocialInstagram";
-import SocialEmail from "../Social/SocialEmail";
+import { SocialWhatsApp, SocialTelephone, SocialInstagram, SocialEmail } from "../Social";
 
 import "./header.scss";
 
@@ -128,4 +125,4 @@ const Header = ({ offsetY, scrollY }) => {
   );
 };
 
-export default Header;
+export { Header };

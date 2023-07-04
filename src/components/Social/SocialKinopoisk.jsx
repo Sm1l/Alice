@@ -13,4 +13,4 @@ const SocialKinopoisk = () => {
   );
 };
 
-export default SocialKinopoisk;
+export { SocialKinopoisk };

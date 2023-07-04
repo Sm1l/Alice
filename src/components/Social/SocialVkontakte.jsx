@@ -13,4 +13,4 @@ const SocialVkontakte = () => {
   );
 };
 
-export default SocialVkontakte;
+export { SocialVkontakte };

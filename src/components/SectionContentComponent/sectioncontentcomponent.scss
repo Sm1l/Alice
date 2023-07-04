@@ -1,0 +1,86 @@
+// @import "../../abstracts/variables.scss";
+
+.sectioncontentcomponent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px 0;
+  // background-color: var(--colors-ui-base);
+  // border-radius: 30px;
+
+  // &__title-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   justify-content: flex-start;
+  //   gap: 10px;
+  //   position: sticky;
+  //   top: 90px;
+  //   align-self: flex-start;
+  // }
+  &__title {
+    white-space: nowrap;
+    font-size: 3rem;
+    padding: 0px 10px;
+  }
+  // &__info {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 10px;
+  //   background-color: var(--colors-ui-base);
+  //   flex-direction: 1;
+  //   padding: 30px;
+  //   border-radius: 30px;
+  // }
+
+  // &__text {
+  // }
+
+  // &__list {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 10px;
+  // }
+  // &__item {
+  //   list-style-type: disc;
+  // }
+}
+
+@media (max-width: 960px) {
+  .sectioncontentcomponent {
+    gap: 15px;
+
+    // &__title-container {
+    //   gap: 5px;
+    // }
+
+    // &__info {
+    //   padding: 20px 15px;
+    // }
+    // &__item {
+    //   margin-left: 15px;
+    // }
+  }
+}
+
+@media (max-width: 768px) {
+  .sectioncontentcomponent {
+    // &__title-container {
+    //   align-items: center;
+    //   gap: 5px;
+    // }
+  }
+}
+
+@media (max-width: 415px) {
+  .sectioncontentcomponent {
+    &__title {
+      font-size: 2.2rem;
+    }
+  }
+}

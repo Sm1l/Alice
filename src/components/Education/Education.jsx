@@ -1,5 +1,5 @@
 import React from "react";
-import SectionComponent from "../SectionComponent";
+import { SectionComponent } from "../SectionComponent";
 
 const Education = () => {
   return (
@@ -25,4 +25,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export { Education };
